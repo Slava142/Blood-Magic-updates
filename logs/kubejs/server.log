@@ -1,0 +1,46 @@
+[15:25:19] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[15:25:19] [INIT] Loaded plugins:
+[15:25:19] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[15:25:19] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[15:25:19] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
+[15:25:19] [INIT] - net.sdm.recipemachinestage.kubejs.KJSPlugin
+[15:25:19] [INIT] - com.bobvarioa.kubejsarsnouveau.KubeJSArsNouveauPlugin
+[15:25:19] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[15:25:19] [INIT] - com.almostreliable.morejs.Plugin
+[15:25:19] [INIT] - com.oierbravo.create_mechanical_spawner.compat.kubejs.KubeJSCreateMechanicalSpawnerPlugin
+[15:25:19] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[15:25:19] [INIT] - net.cathienova.kubejsbloodmagic.KubeJSBloodMagicPlugin
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/argent_portal_frame_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/ars_nouveau.js in 0.003 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/backpack.js in 0.002 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/blood_magic_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/cgs.js in 0.0 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/create_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/custom_items.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/embers_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/ender_eye_replacements.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/folk_coins.js in 0.0 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/grout.js in 0.0 s
+[15:25:19] [INFO] Loaded script server_scripts:added recipes/tonic_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:food_effects.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:loot modification/coin_loot.js in 0.0 s
+[15:25:19] [INFO] Loaded script server_scripts:loot modification/nether_ores.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:no touchy/customnetherportal.js in 0.002 s
+[15:25:19] [INFO] Loaded script server_scripts:removed_recipes.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:stuff i added cause i hate my players/prohibited_stations.js in 0.005 s
+[15:25:19] [INFO] Loaded script server_scripts:stuff i added cause i hate my players/raw_to_nugget.js in 0.0 s
+[15:25:19] [INFO] Loaded script server_scripts:stuff i added cause i hate my players/warp_nexus.js in 0.001 s
+[15:25:19] [INFO] Loaded script server_scripts:tags.js in 0.001 s
+[15:25:19] [INFO] Loaded 21/21 KubeJS server scripts in 0.036 s with 0 errors and 0 warnings
+[15:25:19] [INFO] Scripts loaded
+[15:25:19] [INFO] Initializing recipe event...
+[15:25:19] [INFO] [minecraft:item] Found 1587 tags, added 66 objects, removed 0 objects
+[15:25:19] [INFO] [minecraft:block] Found 768 tags, added 7 objects, removed 0 objects
+[15:25:20] [INFO] Processing recipes...
+[15:25:20] [WARN] Failed to parse recipe 'gourmet:cheese_door[minecraft:stonecutting]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[15:25:20] [WARN] Failed to parse recipe 'gourmet:cheese_block[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[15:25:20] [INFO] Found 8143 recipes in 142.8 ms
+[15:25:21] [INFO] Posted recipe events in 772.3 ms
+[15:25:21] [WARN] Error parsing recipe gourmet:french_toast[create:mixing]: {"type":"create:mixing","heatRequirement":"heated","ingredients":[{"item":"gourmet:flatcake_slice"},{"item":"gourmet:flatcake_slice"},{"item":"gourmet:flatcake_slice"},{"item":"gourmet:flatcake_slice"},{"amount":250,"fluidTag":"forge:milk"},{"item":"minecraft:egg"}],"results":[{"count":4,"item":"gourmet:french_toast"}]}: Unknown item 'gourmet:flatcake_slice'
+[15:25:21] [INFO] Added 197 recipes, removed 227 recipes, modified 3 recipes, with 1 failed recipes in 52.88 ms
+[15:25:24] [INFO] Server resource reload complete!

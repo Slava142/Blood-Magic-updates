@@ -1,0 +1,4 @@
+[00:46:23] [WARN] [FabricLoader/Resolution]: Mod resolution failed
+[00:46:23] [INFO] [FabricLoader/Resolution]: Immediate reason: [NEG_HARD_DEP axiom 4.6.2 {breaks immersive_portals @ [*]}, NEG_HARD_DEP axiom 4.6.2 {breaks immersive_portals @ [*]}, NEG_HARD_DEP axiom 4.6.2 {breaks immersive_portals @ [*]}, ROOT_FORCELOAD_SINGLE axiom 4.6.2, ROOT_FORCELOAD immersive_portals]
+[00:46:23] [INFO] [FabricLoader/Resolution]: Reason: [NEG_HARD_DEP axiom 4.6.2 {breaks immersive_portals @ [*]}]
+[00:46:23] [INFO] [FabricLoader/Resolution]: Fix: add [], remove [], replace [[axiom 4.6.2] -> add:axiom 1 ([(-∞,∞)])]

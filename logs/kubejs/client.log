@@ -1,0 +1,16 @@
+[15:09:16] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[15:09:16] [INIT] Loaded plugins:
+[15:09:16] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[15:09:16] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[15:09:16] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
+[15:09:16] [INIT] - net.sdm.recipemachinestage.kubejs.KJSPlugin
+[15:09:16] [INIT] - com.bobvarioa.kubejsarsnouveau.KubeJSArsNouveauPlugin
+[15:09:16] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[15:09:16] [INIT] - com.almostreliable.morejs.Plugin
+[15:09:16] [INIT] - com.oierbravo.create_mechanical_spawner.compat.kubejs.KubeJSCreateMechanicalSpawnerPlugin
+[15:09:16] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[15:09:16] [INIT] - net.cathienova.kubejsbloodmagic.KubeJSBloodMagicPlugin
+[15:09:16] [INFO] example.js#5: Hello, World! (Loaded client scripts)
+[15:09:16] [INFO] Loaded script client_scripts:example.js in 0.0 s
+[15:09:16] [INFO] Loaded 1/1 KubeJS client scripts in 0.019 s with 0 errors and 0 warnings
+[15:09:30] [INFO] Client resource reload complete!

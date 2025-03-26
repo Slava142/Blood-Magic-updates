@@ -1,0 +1,249 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "pentagon"
+	filename: "i_vant_to_suck_your_blood"
+	group: "6924482853C613F8"
+	icon: "kubejs:blood_vial"
+	id: "4D1A1C42C5E451EB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C9A21E73E7A2071"]
+			description: ["The food you ate as a human is... dissatisfying to your taste now. If you're hungry, you'll have to drink blood or actively harm those around you."]
+			hide_until_deps_complete: true
+			id: "28E7D078FB86BB59"
+			subtitle: "You're a vampire, what did you expect?"
+			tasks: [{
+				id: "0F4A8BB21CD7C0E0"
+				item: "kubejs:blood_vial"
+				type: "item"
+			}]
+			title: "Why can't I eat?"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"4E00F144BF9D3E3C"
+			]
+			description: ["This item has been buffed specifically for vampires and blocked from other races. Oh and villagers are worth a lot more than normal."]
+			hide_until_deps_complete: true
+			id: "0E4C9B2E485E54EB"
+			subtitle: "Enough with the emo phase, time for serial killer"
+			tasks: [{
+				id: "27494B985CF2A8EE"
+				item: "bloodmagic:daggerofsacrifice"
+				type: "item"
+			}]
+			title: "Now that's more like it"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"74BEA859890F52D0"
+			]
+			hide_until_deps_complete: true
+			id: "021FFAC4A5EE1FD2"
+			subtitle: "They grow up so fast"
+			tasks: [{
+				id: "54C9592168DE661D"
+				item: "bloodmagic:masterbloodorb"
+				type: "item"
+			}]
+			title: "Ok seriously now..."
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021FFAC4A5EE1FD2"]
+			id: "55E833CEC9DF3CE7"
+			subtitle: "Please don't crash the server..."
+			tasks: [{
+				id: "6C5EA245ABC06613"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			title: "My god... What do you plan to do with that?"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1C9A21E73E7A2071"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_night_vision"
+				}
+			}
+			id: "4EAB8EF1D68FFB61"
+			subtitle: "Toggle night vision"
+			tasks: [{
+				id: "1A3935D9FA8D9FC6"
+				title: "Press \"G\" to see in the dark"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C9A21E73E7A2071"]
+			description: ["Tired of burning in the sun? Craft yourself a parasol! We'll give you one for free right now. Just be aware you can't attack while holding one of these."]
+			hide_until_deps_complete: true
+			icon: "kubejs:parasol"
+			id: "7DF617CB95F4BD90"
+			rewards: [{
+				id: "38B0FCA45FFD95DE"
+				item: "kubejs:parasol"
+				type: "item"
+			}]
+			subtitle: "Parasols! Get your parasols here!"
+			tasks: [{
+				id: "3E04F771AAD4C141"
+				title: "MY EYES!!!"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"48E7E3A4FF3EE59E"
+				"14A3A6F328C8F5FA"
+			]
+			description: [""]
+			hide_until_deps_complete: true
+			icon: "bloodmagic:weakbloodorb"
+			id: "1C9A21E73E7A2071"
+			subtitle: "Welcome to the night life."
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "1EC7E1FE7592760F"
+				type: "dimension"
+			}]
+			title: "Vampirism"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"74E60E8FE0E327E9"
+				"74BEA859890F52D0"
+			]
+			hide_until_deps_complete: true
+			id: "08BA4D3451D724E8"
+			subtitle: "Look up"
+			tasks: [{
+				id: "375E2A542DBE00E6"
+				item: {
+					Count: 1
+					id: "bloodmagic:livingboots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"74E60E8FE0E327E9"
+				"74BEA859890F52D0"
+			]
+			hide_until_deps_complete: true
+			id: "3F32E012A926E1EE"
+			subtitle: "Up one more"
+			tasks: [{
+				id: "419F2FCED5CCF79F"
+				item: {
+					Count: 1
+					id: "bloodmagic:livingleggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"74E60E8FE0E327E9"
+				"74BEA859890F52D0"
+			]
+			description: [
+				"As a Vampire, you're able to wear Living Armour. This armour will adapt and grow alongside you. When you hurt, your armour takes note. Over time it will develop resistance to that which threatens you."
+				""
+				"Upgrade it wisely! And as always, for more information check your Sanguine Scientiem."
+			]
+			hide_until_deps_complete: true
+			id: "7F9C473984150235"
+			subtitle: "The description is on this one!"
+			tasks: [{
+				id: "6B1A08DD0D4FB0EB"
+				item: {
+					Count: 1
+					id: "bloodmagic:livingplate"
+					tag: {
+						Damage: 0
+						livingStats: {
+							maxPoints: 100
+							upgrades: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1C9A21E73E7A2071"
+				"74E60E8FE0E327E9"
+				"74BEA859890F52D0"
+			]
+			hide_text_until_complete: false
+			hide_until_deps_complete: true
+			id: "2716BC9FAEBEF396"
+			subtitle: "Too far! Go back down!"
+			tasks: [{
+				id: "21FCF485877F4329"
+				item: {
+					Count: 1
+					id: "bloodmagic:livinghelmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["021FFAC4A5EE1FD2"]
+			description: ["As a vampire, your sensitivity to blood is simply much greater than that of others. The power of Dusk Rituals is beyond them, but you have the skill and finesse to pull them off."]
+			id: "3811AC505EFD1233"
+			tasks: [{
+				id: "31A39B6224175FA1"
+				item: "bloodmagic:ritualdivinerdusk"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+	]
+	title: "Bleh Bleh Bleh"
+}

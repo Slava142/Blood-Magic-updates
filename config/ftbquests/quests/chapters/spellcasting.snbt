@@ -1,0 +1,1106 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spellcasting"
+	group: "72BF49A74FE1E2A8"
+	icon: {
+		Count: 1
+		id: "ars_additions:advanced_dominion_wand"
+		tag: { }
+	}
+	id: "3CBFAC944FF58F65"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["58AE9BB4532A9567"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Welcome to the magical world of Ars Nouveau. One of the most complicated and dynamic mods ever made, Ars Nouveau gives you the power to do just about anything you want. "
+				""
+				"Let's dive in together, shall we?"
+			]
+			hide_until_deps_complete: true
+			id: "21C992C5056A053B"
+			tasks: [{
+				id: "22725A09BB448A3B"
+				type: "checkmark"
+			}]
+			title: "Preparing Pathway Pontification"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: [
+				"The Agronomic Sourcelink generates source from nearby trees and crops that grow! Place it in the middle of your farm and watch as you rack up source!"
+				""
+				"Note that bonemealing crops will not trigger the agronomic sourcelink."
+			]
+			hide_until_deps_complete: true
+			id: "39845770504D37AA"
+			rewards: [{
+				id: "0EAB6CB19183B489"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07E1BF2BA8698989"
+				item: "ars_nouveau:agronomic_sourcelink"
+				type: "item"
+			}]
+			title: "Agricultural Aggregation"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: [
+				"The Volcanic Sourcelink is for you pyromaniacs out there who just wanna watch the world burn. You can burn all kinds of fuel, but will have more success with Archwood Logs. Specifically Blazing Archwood Logs. "
+				""
+				"This sourcelink will also generate &oheat&r, which can be used for spawning Lava Lillies or turning stone into lava. Neat!"
+			]
+			hide_until_deps_complete: true
+			id: "483714BA061B2CCE"
+			rewards: [{
+				id: "22061D8C1ECE97EE"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6351A34D8C773C47"
+				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
+			}]
+			title: "Burning Bundles"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: [
+				"One of the more complicated sourcelinks, the Alchemical Sourcelink will take potions from nearby potion jars and turn it into source. The more complicated the potion, the more source you get."
+				""
+				"Note: It's not included in these quests, but Ars has a complex potion crafting system. If you want to look more into it, check out your Worn Notebook."
+			]
+			hide_until_deps_complete: true
+			id: "17F3E0BC89B17917"
+			rewards: [{
+				id: "26A9D85E9C5C049E"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F062370AD6B80D2"
+				item: "ars_nouveau:alchemical_sourcelink"
+				type: "item"
+			}]
+			title: "Appropriating Alchemy"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: ["As the name suggests, the Vitalic Sourcelink generates source from nearby vitality. Killing mobs or breeding animals will trigger this fella. As an added bonus, it'll make your animals grow faster!"]
+			hide_until_deps_complete: true
+			id: "073CBF3A09B66888"
+			rewards: [{
+				id: "715FCA0F955DBC37"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D8B452649D66346"
+				item: "ars_nouveau:vitalic_sourcelink"
+				type: "item"
+			}]
+			title: "Vivacious Vitality"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: [
+				"Do you &olove&r eating? Then look no further than the Mycelial Sourcelink to solve your source problems."
+				""
+				"The mycelial sourcelink will produce source based on the quality of the food eaten near it. If you have a bustling kitchen, this may be the sourcelink for you."
+			]
+			hide_until_deps_complete: true
+			id: "17B8B60FFB00E24F"
+			rewards: [{
+				id: "7DD6F6081DF549D1"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08DFBB493EE15B30"
+				item: "ars_nouveau:mycelial_sourcelink"
+				type: "item"
+			}]
+			title: "Mycelial Mushrooms"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["78FA99136A8F44A8"]
+			description: ["The Fluid Sourcelink will generate source from fluid storage beneath it, consuming the fluid in the process! "]
+			hide_until_deps_complete: true
+			id: "135FD5DB3FE9EC13"
+			rewards: [{
+				id: "587C00436B4FDFAE"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C9B53447DD09867"
+				item: "starbunclemania:fluid_sourcelink"
+				type: "item"
+			}]
+			title: "Funneling Fluid"
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4A4438706D02505B"]
+			description: ["To study the arcane you're going to need a station to study at! Make yourself a Scribe's Station and find a cozy place to place it."]
+			hide_until_deps_complete: true
+			id: "1B6F9C9A237BC11B"
+			rewards: [{
+				id: "06FF37FC60390C89"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "255BBF9608842547"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Scribing Sorcery"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2C9E2AF23A7B4965"]
+			description: ["Glyphs come in three kinds. Form, Augment, and Effect. Our first two glyphs will be Forms."]
+			id: "24BB32F4E8CFD251"
+			rewards: [{
+				id: "3315F7092BC4234F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "485E346905282D64"
+				item: "ars_nouveau:glyph_touch"
+				type: "item"
+			}]
+			title: "Touching Targets"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"07D9B7BC8339063A"
+				"13543E6AE02306EB"
+			]
+			description: [
+				"The Imbuement Chamber will soon become a familiar face to us, but right now it's brand new! You can put items in an imbuement chamber to transmute them into other items. "
+				""
+				"While the imbuement chambers can draw from the source of the world around us, adding filled source jars nearby can speed up the process! But we can't do this quite yet."
+			]
+			id: "6E077973D012EBF1"
+			rewards: [{
+				id: "483D758218B27452"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A0E855A20903D82"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Inventing Imbuement"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2B74E2A4FBE1C186"
+				"0194162E30C8BDCF"
+			]
+			description: [
+				"The Enchanting Apparatus is the main crafting interface for Ars. You're going to be using this a lot. Make sure you place filled source jars nearby, as your recipes are going to need them."
+				""
+				"Note: Unlike the imbuement chamber, the enchanting apparatus will consume the items placed on its pedestals."
+			]
+			id: "142DAE9E7209263B"
+			rewards: [{
+				id: "0BB30D9A63A1351C"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65DB28C91113D122"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			title: "Exquisite Enchanting"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5B48ECC218B13D1D"]
+			description: ["Sorceror's Robes have the weakest armour value, equivalent to gold, but have the most available thread slots."]
+			id: "712D700BE017BBDE"
+			rewards: [{
+				id: "401A5A0538C03769"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6417B78F1B2B2900"
+				item: {
+					Count: 1
+					id: "ars_nouveau:sorcerer_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sorceror's Shirt"
+			x: 7.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5B48ECC218B13D1D"]
+			description: ["Arcanist's Robes are the middle option, equivalent to iron, and have an intermediate amount of thread slots."]
+			id: "17D928C66317FE8F"
+			rewards: [{
+				count: 4
+				id: "37293CFD86D74515"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3718A21FA4204E52"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B7E12433E2DB403"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D3BE9BC58AD3AF5"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15653A33C7091E25"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arcanist's Attire"
+			x: 7.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5B48ECC218B13D1D"]
+			description: ["Battlemage's Robes have the highest armour value, equivalent to diamond, but have the least available thread slots."]
+			id: "7158D024F0A6B26F"
+			rewards: [{
+				id: "248C6D5CA7C61951"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BC4FEBD9FA92F6C"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Battlemage's Blouse"
+			x: 7.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["238A1F848729F630"]
+			id: "2C60A98248FA42C5"
+			rewards: [{
+				id: "2DEE7C49383789E7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ACE5755DE69A743"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			title: "Maturing Magebloom"
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2C60A98248FA42C5"]
+			id: "5B48ECC218B13D1D"
+			rewards: [{
+				id: "03E65E0E507B50A6"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52AE274630993139"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			title: "Fantastic Fibers"
+			x: 6.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["56D41ADA5F44E80A"]
+			description: ["It's time to make your first thread. Look through your worn notebook or JEI to see which threads appeal to you, and try adding them to your armour!"]
+			id: "2C03C6390F9B4618"
+			rewards: [{
+				id: "012BDD60327E5DB0"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B898B3AA7BDBDA1"
+				item: "ars_nouveau:blank_thread"
+				type: "item"
+			}]
+			title: "Thrilling Thread"
+			x: 10.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["142DAE9E7209263B"]
+			description: [
+				"By now, you can consider conducting rituals. Rituals are very powerful magical processes that will require tons of source, so make sure your sourcelink farms are prepared for the extra load."
+				""
+				"If you want to know more about how to conduct rituals, you can consult the worn notebook."
+			]
+			hide_until_deps_complete: true
+			id: "50C0A263757FBB2E"
+			rewards: [{
+				id: "73D1803A0AB1ACBC"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71CA33A389F09ACC"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Radical Rituals"
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5DC647E1A4A8AA09"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Source is the main, well, &osource&r of power in Ars. You're going to need a lot of the stuff, and Source Jars are how you store it!"
+				""
+				"Just one of these will suffice for now, but you're probably going to make many more later."
+			]
+			id: "13543E6AE02306EB"
+			rewards: [{
+				id: "537AFF76CFFBB230"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5541EA0A8A629440"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "Securing Source"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21C992C5056A053B"]
+			id: "5E478A819C396B32"
+			rewards: [{
+				id: "3C2C44E77DD3918F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34D4D224F3828C05"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			title: "Navigating Nouveau"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7931ACEAD7639243"]
+			description: ["The Storage Lectern is the 'brain' of your new magical storage system. Connect it to your other items with the dominion wand, and then open it up to grab your goods and craft your creations!"]
+			hide_until_deps_complete: true
+			id: "7B8F9D3CDD9F5C27"
+			rewards: [{
+				id: "60F5C667272D2749"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FE2CE11E16C98D9"
+				item: "ars_nouveau:storage_lectern"
+				type: "item"
+			}]
+			title: "Selective Storage"
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["31C7802E1B0A25AE"]
+			description: [
+				"Next we'll talk about Effect Glyphs."
+				""
+				"Effects determine what the spell actually &odoes.&r This glyph is the Break Glyph, which will break any block your form glyph has interacted with."
+			]
+			id: "6158704FE1C14B6E"
+			rewards: [{
+				id: "483CADD2AE04B6E8"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EE875BA018A86DC"
+				item: "ars_nouveau:glyph_break"
+				type: "item"
+			}]
+			title: "Breaking Blocks"
+			x: 7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6158704FE1C14B6E"]
+			description: [
+				"A staple in any mage's arsenal is the Leap Glyph. "
+				""
+				"Try combining this with the Self Glyph to leap through the air."
+			]
+			id: "2B042302858A669F"
+			rewards: [{
+				id: "115F5E2BFDDE9B3B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "541A031B9AE31666"
+				item: "ars_nouveau:glyph_leap"
+				type: "item"
+			}]
+			title: "Little Leaps"
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["24BB32F4E8CFD251"]
+			description: [
+				"All Spells are made up of multiple glyphs, and the first glyph will always be a form. As the name suggests, form glyphs will determine how the spell is formed in the world. Our first two forms are Touch and Self."
+				""
+				"&lTouch&r will target anything you right click on, while &lSelf&r will target yourself."
+			]
+			id: "31C7802E1B0A25AE"
+			rewards: [{
+				id: "150952A8F45BD87D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "421097F622EB187A"
+				item: "ars_nouveau:glyph_self"
+				type: "item"
+			}]
+			title: "Selecting Self"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2B042302858A669F"]
+			description: [
+				"The final type of glyph to talk about is the Augment Glyph."
+				""
+				"These glyphs are much rarer, but can completely change the power of your spells. They function by modifying your spells in various ways."
+				""
+				"This is the Amplify Glyph, which will boost the power of your effect glyphs."
+				""
+				"You may notice that you can't apply this to some spells, such as Leap. Sometimes a spell is simply too powerful, and the world itself will restrict you from casting it. Be careful not to anger the Gods of the Folklands in your pursuit of power."
+			]
+			id: "493C08A39AAE09E8"
+			rewards: [{
+				id: "1B7DB644EE35A37D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FB2D1C00F08235D"
+				item: "ars_nouveau:glyph_amplify"
+				type: "item"
+			}]
+			title: "Additional Amplification"
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7931ACEAD7639243"]
+			description: [
+				"To befriend bookwyrms, start by gathering books and quills to tempt them to your ritual. Create a Tablet of Awakening, and add the aforementioned books before activating the ritual. "
+				""
+				"The ritual will create Bookwyrm Charms, which you can use on a storage lectern to spawn your new friends."
+			]
+			hide_until_deps_complete: true
+			id: "5D45B6DDB68B9B9A"
+			rewards: [{
+				id: "45FB2F7EDF3E8175"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34AAC39F5305D836"
+				item: "ars_nouveau:bookwyrm_charm"
+				type: "item"
+			}]
+			title: "Bagging Bookwyrms"
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7931ACEAD7639243"]
+			description: ["Repositories are chests for real mages. Your items will appear as books that slowly fill these neat new nooks. "]
+			hide_until_deps_complete: true
+			id: "56FF160511CF623B"
+			rewards: [{
+				id: "01D0E619913F7076"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FC33172AE4895F2"
+				item: "ars_nouveau:repository"
+				type: "item"
+			}]
+			title: "Bigger Boxes"
+			x: -5.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7931ACEAD7639243"]
+			description: ["Dominion wands connect together magical helpers, storage repositories, and other pieces to make them work together. You will need this wand to tell your Bookwyrm friends which boxes are theirs."]
+			hide_until_deps_complete: true
+			id: "403C30D90BFEB10B"
+			rewards: [{
+				id: "098108AD8DEC7D59"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32B22CA752244F07"
+				item: {
+					Count: 1
+					id: "ars_nouveau:dominion_wand"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Directing Dominion"
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6E077973D012EBF1"]
+			description: ["Place a lapis lazuli in the imbuement chamber to make your first Source Gem! Source gems will be the base ingredient of countless recipes from now on, so it may be a good time to think about getting more lapis or amethyst."]
+			id: "011B08011C3B84BC"
+			rewards: [{
+				id: "2E3350E28200FBF3"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "That's right, it goes in the square hole!"
+			tasks: [{
+				id: "17F0922CD0841C37"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Jagged Gems"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["011B08011C3B84BC"]
+			hide_until_deps_complete: true
+			id: "03D58CA63281DFF9"
+			rewards: [{
+				id: "7AE28C33DF01C18F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "It's Source... in Stone... Wow!"
+			tasks: [{
+				id: "33F5C099F1C4C288"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			title: "Source Stone"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["03D58CA63281DFF9"]
+			description: [
+				"Your enchanting apparatus will require pedestals to hold its recipe items! Craft a few of these to get started. "
+				""
+				"Note: These also work for the imbuement chamber!"
+			]
+			hide_until_deps_complete: true
+			id: "0194162E30C8BDCF"
+			rewards: [{
+				id: "1D4B574C438EBA78"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "56D5B3AE6C522A7C"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			title: "Peddling Pedestals"
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["03D58CA63281DFF9"]
+			description: ["The Arcane Core is part of your Enchanting Apparatus. Place it beneath the apparatus to make it usable."]
+			hide_until_deps_complete: true
+			id: "2B74E2A4FBE1C186"
+			rewards: [{
+				id: "62C66654E7CEE7A0"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18A0D28913430B7D"
+				item: "ars_nouveau:arcane_core"
+				type: "item"
+			}]
+			title: "Arcane Amperage"
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["142DAE9E7209263B"]
+			description: ["Every good magician needs fitting robes! Let's grow the magical thread we need. Start by making some Magebloom Seeds in an enchanting apparatus. You can plant these just like any other seed."]
+			hide_until_deps_complete: true
+			id: "238A1F848729F630"
+			rewards: [{
+				id: "011685A06291D880"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1413E1D02CC164EE"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			title: "Sowing Seeds"
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1B6F9C9A237BC11B"]
+			description: ["To scribe our glyph we're going to need paper to write on! Our magic will need to be scribed on special paper called Glyph Frames. There are three tiers of glyph frames, but we're going to start by making the first tier: Lesser Glyph Frame."]
+			id: "2C9E2AF23A7B4965"
+			rewards: [{
+				id: "77FBBAFB12CB3DE0"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "27B1CCA2545B1981"
+				item: "kubejs:lesser_glyph_frame"
+				type: "item"
+			}]
+			title: "Gaining Glyphs"
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7158D024F0A6B26F"
+				"17D928C66317FE8F"
+				"712D700BE017BBDE"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The Alteration Table is what will let us modify our armour using threads. As long as we have thread slots in the armour, we can add threads with different effects."]
+			id: "56D41ADA5F44E80A"
+			rewards: [{
+				id: "11C176E679A676AF"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6704CAF00C393EE3"
+				item: "ars_nouveau:alteration_table"
+				type: "item"
+			}]
+			title: "Accessing Alteration"
+			x: 9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["21C992C5056A053B"]
+			description: ["You're going to need a lot of gold to begin your foray into Ars. It might be a good idea to check the &lTinkering&r section of the questbook to get a smeltery set up."]
+			id: "39FF8F4DC54A0F3D"
+			rewards: [{
+				id: "1A8C03D351ECCFEC"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4179D2BA92EA8109"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "Gathering Gold"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["011B08011C3B84BC"]
+			description: [
+				"\"&oBut how do we actually fill our jars with source?&r\" I hear you ask. Well, the answer, my dear pupil, is Sourcelinks. There are many sourcelinks, and they all have their own unique way of gathering source."
+				""
+				"Complete this quest to learn more about sourcelinks."
+			]
+			hide_until_deps_complete: true
+			id: "78FA99136A8F44A8"
+			tasks: [{
+				id: "180D13247325DB1A"
+				title: "Gathering Source"
+				type: "checkmark"
+			}]
+			title: "Sourcing Source"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["39FF8F4DC54A0F3D"]
+			description: ["Lapis Lazuli will be used to make our first Ars resource: Source Gems. Grab as much of this as you can while mining for all that gold you need."]
+			id: "07D9B7BC8339063A"
+			rewards: [{
+				id: "6BE243BA4B41F178"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D63CB8FFA9BA532"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50C0A263757FBB2E"]
+			description: [
+				"You will need multiple magical things to create your containers. Gather your gear then prepare for new pets, as bookwyrms bustle about to bottle up your baggage."
+				""
+				"You will want to place your recepticles near a storage lectern. Next, take your bookwyrm charms and put them into the storage lectern. To connect it all together, shift right click the repository, then right click the storage lectern with your dominion wand to connect it all."
+			]
+			hide_until_deps_complete: true
+			id: "7931ACEAD7639243"
+			subtitle: "A magical solution to bulk storage!"
+			tasks: [{
+				id: "3E0A23E23CB439CD"
+				title: "Magical Storage"
+				type: "checkmark"
+			}]
+			title: "Sublime Storage"
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"142DAE9E7209263B"
+				"2704A3E1AED88986"
+			]
+			hide_until_deps_complete: true
+			id: "1A3650451DCBB137"
+			rewards: [{
+				id: "0FC45547D9C28082"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "New Spells!"
+			tasks: [{
+				id: "5E1D6AEADF65350A"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Mage's Mastery"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"011B08011C3B84BC"
+				"2704A3E1AED88986"
+			]
+			description: ["\"&oWhen do I get to do real magic&r?\" you say? Well... perhaps it's time. Craft yourself a Novice Spellbook, and we'll get you set up."]
+			hide_until_deps_complete: true
+			id: "4A4438706D02505B"
+			rewards: [{
+				id: "12B5A7F90B33625C"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "510514BE89D35FBF"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "Spectacular Spellbook"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["07D9B7BC8339063A"]
+			id: "32216E9656589F6D"
+			rewards: [{
+				id: "6481DAC6AA2DE7F7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "A handy alternative to lapis"
+			tasks: [{
+				id: "7AAC2353D214BD89"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			title: "Accumulating Amethyst"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A3650451DCBB137"]
+			hide_until_deps_complete: true
+			id: "4419C14663018A1A"
+			rewards: [{
+				id: "52016ECD78650D2F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Quest 3: Fight God."
+			tasks: [{
+				id: "51858E4F1ACE02A7"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Archmage's Ascendency"
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["21C992C5056A053B"]
+			description: [
+				"Much of Ars Nouveau's crafting is going to require Archwood. While you can find isolated archwood trees throughout the world, we recommend finding an archwood forest. "
+				""
+				"TIP: Make a Nature's Compass if you're not sure where one is!"
+			]
+			icon: "ars_nouveau:purple_archwood_sapling"
+			id: "5DC647E1A4A8AA09"
+			rewards: [{
+				id: "18A72F38FEEF8123"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "ars_nouveau:archwood_forest"
+				id: "21D67A451B0600C5"
+				type: "biome"
+			}]
+			title: "Acquiring Archwood"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7158D024F0A6B26F"]
+			id: "3B2BE23207C6B3F3"
+			rewards: [{
+				id: "02E5851C421CAE3E"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5843789BCF875993"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7158D024F0A6B26F"]
+			id: "24287F724326575E"
+			rewards: [{
+				id: "3E3EABCCA0B50263"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "493128C6785B4C04"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Battlemage's Bloomers"
+			x: 6.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7158D024F0A6B26F"]
+			id: "30054CC38F3124F2"
+			rewards: [{
+				id: "64A5E8A17D60FB87"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "480C6A565226569D"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_hood"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Battlemage's Beret"
+			x: 8.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["712D700BE017BBDE"]
+			id: "16B344E9F011FB96"
+			rewards: [{
+				id: "68A8F7636E39EF10"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C9E1B8D2EFBAEEE"
+				item: {
+					Count: 1
+					id: "ars_nouveau:sorcerer_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sorceror's Shoes"
+			x: 5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["712D700BE017BBDE"]
+			id: "7C37B176CAF9E073"
+			rewards: [{
+				id: "23F3C90373C194C7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "38DFCC35851E16F1"
+				item: {
+					Count: 1
+					id: "ars_nouveau:sorcerer_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sorcerer's Slacks"
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["712D700BE017BBDE"]
+			id: "11BFF69B515A9B9D"
+			rewards: [{
+				id: "7B4CA6BCB30B31FE"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D8D47FA8032C2E4"
+				item: {
+					Count: 1
+					id: "ars_nouveau:sorcerer_hood"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sorceror's Sombrero"
+			x: 8.5d
+			y: -9.0d
+		}
+	]
+	title: "Spellcasting"
+}

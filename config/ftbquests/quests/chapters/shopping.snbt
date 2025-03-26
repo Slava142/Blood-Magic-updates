@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "shopping"
+	group: "6F2FDB82AB7F19ED"
+	icon: "create:stock_ticker"
+	id: "18B2E55F44720CB8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7DF37F0D805B5865"]
+			description: [
+				"Vaults are huge storage blocks, that can be made bigger by connecting more of them to each other. However, you cannot interact with them directly to access their inventory. You'll have to find another way."
+				""
+				"(It's funnels... the 'other way' is packagers/funnels)"
+			]
+			id: "4636B581C58582EE"
+			tasks: [{
+				id: "79F9E002FAF80F8B"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			title: "Massive Storage"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DF37F0D805B5865"]
+			description: ["Packagers will take items from attached inventories and turn them into packages to be sent wherever you desire! Furthermore, any packages entered into them will be unpackaged back into regular items."]
+			id: "547C764E8CB03F86"
+			tasks: [{
+				id: "674F3E38CBC80C46"
+				item: "create:packager"
+				type: "item"
+			}]
+			title: "Packaging"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DF37F0D805B5865"]
+			description: ["A stock ticker, connected to your stock network (right click), when placed next to a seat with a mob inside will turn that mob into a stock keeper. You can access all the items in your stock network from stock keepers! Wow!"]
+			id: "357E14AA5969BBA6"
+			tasks: [{
+				id: "17B332DFD478B3A4"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			title: "Get in, we're going shopping"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["547C764E8CB03F86"]
+			description: ["Packages can hold up to 9 stacks of items. To address your packages, place a sign or hanging sign on your packager. The text on the sign should be identical to the name of the address you'd like your package to arrive at."]
+			id: "53DFA54C76CEB045"
+			tasks: [{
+				id: "4FEF4D1BB2A3E934"
+				item: {
+					Count: 1
+					id: "create:cardboard_package_12x12"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Amazon in Minecraft"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["357E14AA5969BBA6"]
+			description: ["Push a mob into a seat! And it'll just... sit there! It's great!"]
+			id: "5BF874949F9A35BB"
+			tasks: [{
+				id: "57C9B1DA903FB820"
+				item: "create:white_seat"
+				type: "item"
+			}]
+			title: "Have a Seat"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5BF874949F9A35BB"]
+			description: ["Right click on a stock keeper with a tablecloth to begin configuring a shop! You can set up to 4 items to sell as a bundle, and you can choose the count of each up to a stack. Once you place your shopified tablecloth, you can add a price as you wish on the little tab on the side!"]
+			id: "26CEEC89B7AD6070"
+			tasks: [{
+				id: "6FA3C6F73A223866"
+				item: "create:white_table_cloth"
+				type: "item"
+			}]
+			title: "Shops!"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["53DFA54C76CEB045"]
+			description: [
+				"Frogports can send items between themselves, so long as the relevant packages are addressed correctly. Right click your frogport on a chain before placing it to add it to the network, and give it a name to address packages to."
+				""
+				"These are complicated (and also not necessary), so ponder for more info."
+			]
+			id: "133BB13AAFFA1468"
+			tasks: [{
+				id: "1EA3939095165925"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			title: "Frogge!"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7DF37F0D805B5865"]
+			description: ["Place a stock link on an inventory to begin your item network! Any future inventories you want to add to the network will also need a stock link. Make sure you connect the stock links before placing the second one."]
+			id: "4AD80FFB34279FEA"
+			tasks: [{
+				id: "230DA1D7776D6C95"
+				item: "create:stock_link"
+				type: "item"
+			}]
+			title: "The Storage Network"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70237B94C4118DFE"]
+			description: ["Shops are a core feature of Folktale, and we hope players interact with them. This quest chapter is here to demistify the process a bit, but honestly the visual representation the ponder menu gives is very handy itself, so we recommend using both."]
+			hide_until_deps_complete: true
+			icon: "kubejs:copper_folk_coin"
+			id: "7DF37F0D805B5865"
+			optional: true
+			tasks: [{
+				id: "6CECBAECA591A702"
+				type: "checkmark"
+			}]
+			title: "Setting up your first shop"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DF37F0D805B5865"]
+			description: [
+				"Chain Conveyors are a new addition to the cast of Create contraptions. These beauties allow you to transfer SU over long distances, but more importantly, they can transfer &opackages&o."
+				""
+				""
+				"P.S (Try using your wrench on a chain)"
+			]
+			id: "133A17B877EA6674"
+			tasks: [{
+				id: "611D872ACF76821A"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["133BB13AAFFA1468"]
+			description: ["No, I'm not explaining how to make a train network in this description box."]
+			id: "4E26CE4FA604DF2C"
+			subtitle: "Frogports for Trains!"
+			tasks: [{
+				id: "6E3A9FA8A06591CF"
+				item: "create:white_postbox"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+	]
+	title: "Shopping"
+}

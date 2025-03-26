@@ -1,0 +1,134 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mod_basics_and_changes"
+	group: "72BF49A74FE1E2A8"
+	icon: "minecraft:book"
+	id: "43581CAC86028AB6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["14A3A6F328C8F5FA"]
+			hide_until_deps_complete: true
+			icon: "minecraft:crafting_table"
+			id: "4A4621A0D20BC7B5"
+			subtitle: "Looking to understand the content mods? Start here"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "7AE272CCA96B88BC"
+				type: "dimension"
+			}]
+			title: "What are my options?"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A4621A0D20BC7B5"]
+			description: [
+				"Tired of getting only nuggets from your smelting? Tire no more! Build yourself a smeltery and all your problems will be solved."
+				""
+				"Complete this quest for more info."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "tconstruct:smeltery_controller"
+			id: "55F0B6A504F55E74"
+			tasks: [{
+				id: "3872DBFBE6F196DD"
+				type: "checkmark"
+			}]
+			title: "The Smeltery"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A4621A0D20BC7B5"]
+			description: [
+				"So you want to be a wizard? Well... you may be out of luck. "
+				""
+				"If your talent isn't good, then your only option is to unlock your latent ability through a potion. A potion that only a master of the arcane can craft. Hopefully you can pay their price."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "45D06A9A599E836C"
+			subtitle: "You must learn the secrets of the arcane"
+			tasks: [{
+				id: "28A80E5EBF0D0705"
+				item: "kubejs:source_tonic"
+				type: "item"
+			}]
+			title: "But I wanna be a wizard!"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45D06A9A599E836C"]
+			hide_until_deps_complete: true
+			id: "0B4BE3ACE765943C"
+			rewards: [{
+				auto: "no_toast"
+				command: "/ftbquests change_progress @s complete 76B1BE62EB44D3B0"
+				elevate_perms: true
+				id: "14496B98B066D583"
+				silent: true
+				type: "command"
+			}]
+			subtitle: "You bribed a Genasi! Well done"
+			tasks: [{
+				id: "7DB348BB92CD09FA"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			title: "You've been awakened!"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A4621A0D20BC7B5"]
+			description: [
+				"Getting started with Create is simple and accessible to everyone. Mastering it, however, is hard. "
+				""
+				"The greatest technological advancements belong only to humans, but with sufficient skill, anyone can wield the powerful tool that is Create."
+				""
+				"Complete this quest for more info."
+			]
+			hide_until_deps_complete: true
+			icon: "create:cogwheel"
+			id: "28E6BD04447E5641"
+			tasks: [{
+				id: "5C928958073211D6"
+				title: "Learning to Create"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A4621A0D20BC7B5"]
+			description: [
+				"So you want to learn the forbidden arts? Look no further. All it takes is the willingness to commit atrocities on a daily basis. Truly anyone can do it."
+				""
+				"Complete this quest for more info."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "bloodmagic:guide"
+				}
+			}
+			id: "431729A8BF0C88E4"
+			tasks: [{
+				id: "1B39CAB644FA2800"
+				title: "Everything about Sanguinmancy"
+				type: "checkmark"
+			}]
+			title: "Everything about Sanguinmancy"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Introducing The Mods"
+}

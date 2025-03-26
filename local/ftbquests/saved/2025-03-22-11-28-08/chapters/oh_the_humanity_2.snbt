@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "oh_the_humanity_2"
+	group: "6924482853C613F8"
+	icon: "create:mechanical_crafter"
+	id: "1C5822350543CC09"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F6641C056EC49C5"]
+			description: ["Us humans are slow starters. If you want to unlock our true potential, you'll need to start by working with Create. Play through the 'Create' section of the questbook, then come back to learn more."]
+			hide_until_deps_complete: true
+			id: "04292B24263B9BB4"
+			tasks: [{
+				id: "3D46AA84EAE0B50D"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Unlocking Potential"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"04292B24263B9BB4"
+				"3376FBCB02ED4F7B"
+			]
+			description: [
+				"The trading depot can be placed next to a villager's workstation to automate trading. Place the items you want to trade on the depot, and the villager will exchange them for emeralds whenever it interacts with its station. For more info use the ponder tool."
+				""
+				"Note: They usually interact with their station at set times per day, so don't be alarmed if it isn't working immediately."
+			]
+			hide_until_deps_complete: true
+			id: "4E1520419689AEDD"
+			tasks: [{
+				id: "28B4454E1BAAD61C"
+				item: "trading_floor:trading_depot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04292B24263B9BB4"]
+			description: ["A miracle of modern machinery, us Humans are capable of crafting more modern weaponry. That oughta stop a pesky wizard in their tracks!"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "cgs:revolver"
+				tag: {
+					AmmoCount: 6
+					variant: "default"
+				}
+			}
+			id: "15CAD3D715991037"
+			tasks: [{
+				id: "3A7C326F1C10D888"
+				type: "checkmark"
+			}]
+			title: "Arms Race"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15CAD3D715991037"]
+			description: ["To make bullets for our guns, we're going to need lead. Lead can only be found in the nether, so you'll have to make your way there first."]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "44FEA77A56F08DED"
+			tasks: [{
+				id: "5F88DCC2EA892A27"
+				item: "kubejs:netherrack_lead_ore"
+				type: "item"
+			}]
+			title: "Finding Lead"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["728352592F566911"]
+			description: ["Finally it's time to make our revolver. You're gonna need a lot of systems set up to make this bad boy. Hope you have some good logistics by now!"]
+			hide_until_deps_visible: true
+			id: "2176BA9E2F673E69"
+			tasks: [{
+				id: "2551D14C219FA9B7"
+				item: {
+					Count: 1
+					id: "cgs:revolver"
+					tag: {
+						AmmoCount: 6
+						variant: "default"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44FEA77A56F08DED"]
+			description: ["Now that we have lead, we can start looking into making bullets for our gun. Start by using a mechanical saw with a filter to cut iron into shell casings."]
+			hide_until_deps_visible: true
+			id: "7FE5143CA83013B3"
+			tasks: [{
+				id: "3FD10379ABC4ADB2"
+				item: "cgs:press_form_10mm"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FE5143CA83013B3"]
+			description: ["With our shell casings, some gunpowder, our lead from earlier and brass, we can finally make a usable bullet with sequenced assembly. Nice!"]
+			hide_until_deps_visible: true
+			id: "7CA1491A71F5928C"
+			tasks: [{
+				id: "0805C8A928DC64B9"
+				item: "cgs:round_10mm"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["04292B24263B9BB4"]
+			description: [
+				"The disenchanter is the beginning of our enchantment industry. It's similar to the normal fluid drains, but for EXP! "
+				""
+				"Put enchanted items on it to disenchant them into raw EXP, or stand on it yourself to drain the EXP you're holding. Now we can finally store our EXP somewhere safely without fearing death!"
+			]
+			hide_until_deps_complete: true
+			id: "5436F67C83FD92F2"
+			tasks: [{
+				id: "5770F69A7E1181E0"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["165E6C02E4D0A708"]
+			description: ["The printer is an incredible tool. It can copy the contents of enchantment books placed inside it, and use liquid EXP from our system to copy the enchantment onto a book placed on a depot below."]
+			hide_until_deps_visible: true
+			id: "61523AB3B475E647"
+			tasks: [{
+				id: "1BD69395EA6B583A"
+				item: "create_enchantment_industry:printer"
+				type: "item"
+			}]
+			title: "Printing Books"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5436F67C83FD92F2"]
+			description: ["Our Enchantment Industry(tm) systems are going to use a lot of liquid experience. Store it in a big tank, and use a spout to pour some into a bottle to complete this quest."]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "165E6C02E4D0A708"
+			tasks: [{
+				id: "542ACED4AF082D8A"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			title: "Liquid Experience"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["165E6C02E4D0A708"]
+			description: [
+				"We've made liquid experience now, but we can do even better. Use a superheated mixer to combine liquid experience, lapis lazuli and glowsquid ink, and we'll get Liquid Hyper Experience."
+				""
+				"It's like experience, but blue!"
+			]
+			hide_until_deps_visible: true
+			id: "26C3B6C685D2FA16"
+			tasks: [{
+				id: "5F06AABB640D9690"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			title: "Hyper Experience"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F6641C056EC49C5"]
+			description: [
+				"Villagers in the Folklands are a solitary bunch. They don't like to interact with outsiders. Fortunately for us, we're similar enough to them that they'll begrudgingly trade with us. "
+				""
+				"Naturally we can capitalize on this misplaced trust! Shift right click a villager to pick it up, and if you're far enough away, it'll pop into your inventory."
+			]
+			hide_until_deps_complete: true
+			id: "3376FBCB02ED4F7B"
+			tasks: [{
+				id: "4766DA4DBDB35220"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
+			title: "You can pick them up?!"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E8E941392EEF192"]
+			description: [
+				"Blaze Enchanters will enchant any non-book item that is placed over them. "
+				""
+				"To tell a blaze enchanter what enchantment to use, we have to give it our configured enchantment guide from the last step."
+			]
+			hide_until_deps_visible: true
+			id: "17623B3B258C454C"
+			tasks: [{
+				id: "2B4146BA5331ED40"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Blaze Enchanter"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"66C6147D705AF745"
+				"14A3A6F328C8F5FA"
+			]
+			description: ["Welcome to being a Human! First time?"]
+			hide_until_deps_complete: true
+			icon: "create:mechanical_arm"
+			id: "2F6641C056EC49C5"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "418780E6636F76C8"
+				type: "dimension"
+			}]
+			title: "Human"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26C3B6C685D2FA16"]
+			description: [
+				"Ever wanted to farm mob drops without a giant mob farm? Well look no further. With our patented Random Spawn Fluid, you can do just that! "
+				""
+				"Simply mix liquid hyper experience and water in a superheated mixer to make spawn fluid. Random spawn fluid can be further mixed with mob parts to specify the mob you want to farm. "
+			]
+			hide_until_deps_complete: true
+			id: "64846E3C75D2AFA1"
+			tasks: [{
+				id: "690CCD63E86058B7"
+				item: "create_mechanical_spawner:spawn_fluid_random_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["64846E3C75D2AFA1"]
+			description: [
+				"Now that we have our spawn fluid, we need something to make use of it! That's where the Mechanical Spawner comes in. "
+				""
+				"Pump your spawn fluid into any side, and give it kinetic power at the bottom. If you've set it up right, mobs will start coming out!"
+			]
+			id: "52F781DB87C9B111"
+			tasks: [{
+				id: "4F93627B37C9F9B3"
+				item: "create_mechanical_spawner:mechanical_spawner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["44FEA77A56F08DED"]
+			description: ["To make the gun itself we'll need silver. Good thing we're already in the nether!"]
+			id: "728352592F566911"
+			tasks: [{
+				id: "2150ACF36949D8CE"
+				item: "kubejs:netherrack_silver_ore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["165E6C02E4D0A708"]
+			description: [
+				"The enchanting guide will allow us to select an enchantment from any enchanted item we hand to it. Don't worry, your item won't be lost. "
+				""
+				"Once the enchanting guide has been configured, we can give it to a blaze enchanter. More info in the next quest."
+			]
+			id: "2E8E941392EEF192"
+			tasks: [{
+				id: "6C8289F25C5515FB"
+				item: "create_enchantment_industry:enchanting_guide"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26C3B6C685D2FA16"]
+			description: [
+				"A unique feature of Enchantment Industry is it allows us to exceed the enchantment level cap. We can do this by feeding our blaze enchanters liquid &oHyper Experience&r. "
+				""
+				"Like this we can get impossible enchantments such as Protection V or Sharpness VI."
+			]
+			icon: "create:blaze_burner"
+			id: "1CFD52032511851E"
+			tasks: [{
+				id: "1904930469DFC44C"
+				title: "Hyper Enchanting"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["52F781DB87C9B111"]
+			description: [
+				"Don't want the mobs to spawn in the world? Just want the drops? Then for extra credit you can make this Loot Collector. Configure your spawner where you want it to place the mobs, and place this loot collector at that position. "
+				""
+				"Suddenly your items will start appearing here, completely mob-free! Use any kind of funnel or chute to pull the items out."
+			]
+			id: "36252CF3C0D45495"
+			tasks: [{
+				id: "5F264B18E60326C8"
+				item: "create_mechanical_spawner:loot_collector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+	]
+	title: "Oh the Humanity"
+}

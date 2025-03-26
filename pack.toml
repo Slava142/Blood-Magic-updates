@@ -1,0 +1,13 @@
+name = "Folktale"
+author = "Southlight"
+version = "2.1.4"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d86bf32ab5827e8b8fda6d9345fc3de130afb1a0c982ecfe32556a5a3dd2126a"
+
+[versions]
+forge = "47.3.38"
+minecraft = "1.20.1"

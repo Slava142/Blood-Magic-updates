@@ -1,0 +1,89 @@
+{
+	id: "13D697158090DECB"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			command: "/origin set @s origins:origin folktale:vampire"
+			elevate_perms: true
+			exclude_from_claim_all: true
+			icon: "kubejs:blood_vial"
+			silent: true
+			title: "I want to be a Vampire!"
+			type: "command"
+		}
+		{
+			command: "/origin set @s origins:origin folktale:dwarf"
+			elevate_perms: true
+			exclude_from_claim_all: true
+			icon: {
+				Count: 1
+				id: "tconstruct:pickadze"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:seared_stone"
+						"tconstruct:seared_stone"
+						"tconstruct:seared_stone"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:searing"
+						}
+						{
+							level: 1
+							name: "tconstruct:pathing"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.15f
+						"tconstruct:durability": 1.3f
+						"tconstruct:mining_speed": 0.75f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 2.4149997f
+						"tconstruct:attack_speed": 1.3f
+						"tconstruct:durability": 248.62498f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 5.3625f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			silent: true
+			title: "I want to be a Dwarf!"
+			type: "command"
+		}
+		{
+			command: "/origin set @s origins:origin folktale:human"
+			elevate_perms: true
+			exclude_from_claim_all: true
+			icon: "create:goggles"
+			silent: true
+			title: "I want to be a Human!"
+			type: "command"
+		}
+		{
+			command: "/origin set @s origins:origin folktale:genasi"
+			elevate_perms: true
+			exclude_from_claim_all: true
+			icon: "ars_nouveau:abjuration_essence"
+			silent: true
+			title: "I want to be a Genasi!"
+			type: "command"
+		}
+		{
+			description: ""
+			icon: "minecraft:player_head"
+			title: "I'm perfect as I am"
+			type: "toast"
+		}
+	]
+	title: "Choices"
+}

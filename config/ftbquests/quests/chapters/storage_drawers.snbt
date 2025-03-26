@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_drawers"
+	group: "6F2FDB82AB7F19ED"
+	icon: "functionalstorage:storage_controller"
+	id: "34E13CA4638DED17"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["14A3A6F328C8F5FA"]
+			description: [
+				"Storage drawers can hold thousands of blocks, however they can only hold a few types. There are 4 kinds of base drawer: Single, Double, and 2x2. Able to hold 1, 2, and 4 types, respectively."
+				""
+				"To interact with drawers, right click to insert and left click to extract."
+			]
+			hide_until_deps_complete: true
+			id: "421E1C00008E00D1"
+			subtitle: "Massive Storage!"
+			tasks: [{
+				id: "26D8343AEC5B9029"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: [
+				"Don't like the way your drawers look? Make framing drawers! Now your drawers can look however you want!"
+				""
+				"To 'paint' these, use your &linventory crafting grid&r, place the framed drawer in the bottom left, and 3 blocks you want to use the textures of around it. Shift them around until it's framed as you desire."
+			]
+			id: "2D8401E43D9C6628"
+			tasks: [{
+				id: "715D44691BE3F4C9"
+				item: "functionalstorage:framed_1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58E12591D2470026"]
+			description: [
+				"The linking tool will allow you to connect your storage controller to your drawers. "
+				""
+				"The configure tool will allow you to lock the expected contents of a drawer in case it's emptied at some point and you don't want it automatically populating with a brand new type of item."
+			]
+			id: "74C25CC1C55D0AF0"
+			tasks: [
+				{
+					id: "0A24BDFFFC1C4EA8"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1973E857457B8C3B"
+					item: "functionalstorage:configuration_tool"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			id: "040F76569007B632"
+			subtitle: "Like item drawers! But for fluids!"
+			tasks: [{
+				id: "6731B792B049C099"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: [
+				"The storage controller allows you to connect all your drawers in a single block. This is useful for interfacing with other mods like Create's Stock Keepers or Ars Nouveau's Storage Lectern."
+				""
+				"Even without another mod though, double right clicking on this will deposit all of your inventory into the relevant drawers as long as they're connected."
+			]
+			id: "58E12591D2470026"
+			tasks: [{
+				id: "0A916FB13DDE7C20"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58E12591D2470026"]
+			description: [
+				"The Controller Access Point will allow you to relay your Storage Controller to another area. "
+				""
+				"Very handy for complex setups, or if you require another access point for automated inputs."
+			]
+			id: "1E0E65A159C2BB0E"
+			tasks: [{
+				id: "474F2FAE21A1892A"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: [
+				"Compacting drawers are a special kind of drawer designed to let you transfer items between packaged types. Which sounds complicated, but it's not."
+				""
+				"For example, if you put 9 iron ingots into a compacting drawer, you'll be able to directly extract it as either a block or nuggets. Give it a try!"
+			]
+			id: "11AD848B11003E62"
+			tasks: [{
+				id: "630D66A99CA1F042"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: ["Stacking upgrades do exactly what you think they do. Literally just hover them and it tells you what they do, come on now."]
+			id: "550C0220C8E63FB9"
+			tasks: [{
+				id: "1BCE43DB1A18ED6D"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: ["The armoury cabinet is a special drawer designed for holding massive amounts of unstackable items. You can put your armour, tools, potions and more in here."]
+			id: "60547658A867EE2B"
+			tasks: [{
+				id: "17372958CA0AB1D1"
+				item: "functionalstorage:armory_cabinet"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["421E1C00008E00D1"]
+			description: [""]
+			id: "742CDE35FF640189"
+			tasks: [{
+				id: "41DFBFEF793AED3B"
+				item: "functionalstorage:collector_upgrade"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+	]
+	title: "Storage Drawers"
+}

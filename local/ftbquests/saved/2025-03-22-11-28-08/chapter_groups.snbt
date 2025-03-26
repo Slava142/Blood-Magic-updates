@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "45D8E0E5D3AD7EBC", title: "Introduction" }
+		{ id: "72BF49A74FE1E2A8", title: "The Core Mods" }
+		{ id: "6924482853C613F8", title: "Origins" }
+		{ id: "6F2FDB82AB7F19ED", title: "Extra Info" }
+	]
+}

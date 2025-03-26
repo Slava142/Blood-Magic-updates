@@ -1,0 +1,662 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	default_repeatable_quest: true
+	filename: "shop"
+	group: ""
+	hide_quest_until_deps_visible: true
+	id: "52D108D04A20567A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			dependencies: ["14D3FCBEBBB70B2E"]
+			description: ["Welcome to the shop! Have a gold coin on the house. If you get low on resources, you can spend your folk coins here!"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "6355F8CDCF3AD857"
+			rewards: [{
+				id: "3389B3767643E9BF"
+				item: "kubejs:gold_folk_coin"
+				type: "item"
+			}]
+			subtitle: "*Almost* Free stuff!"
+			tasks: [{
+				id: "3BE055C2B383911C"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Shopping Time!"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
+			id: "2747A01BCCB4EF1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3184E4C1226E3EC3"
+				table_id: 795153769594644799L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 4L
+				id: "684083ADFE7BAC34"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Log Pack"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:coal"
+			id: "1AF98903228240D3"
+			rewards: [{
+				count: 16
+				id: "1536B7637070D370"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "121FD5C634DB3874"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Coal Pack"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "63517931CE90E41C"
+			rewards: [
+				{
+					id: "4E04DA3AE6E13DC1"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "760A781278B919EF"
+					item: {
+						Count: 1
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A8A1D729F6E52A5"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BE663520B9A4AD3"
+					item: {
+						Count: 1
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "7BFAB0A55EE93A97"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Tool Pack"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:source_gem"
+			id: "03FEF78ED0216B71"
+			rewards: [{
+				count: 4
+				id: "526B32F310363FE0"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2AA8BA9F8A93F897"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "But I don't want to make more..."
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "bloodmagic:blankslate"
+			id: "7D46C0BA10CC58E2"
+			rewards: [{
+				count: 8
+				id: "70FFC2797EE80935"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "3D6C2EC7D6CC4E2A"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "You know these are made from stone right?"
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:cobblestone"
+			id: "61058513EA594E6A"
+			rewards: [{
+				count: 64
+				id: "35589C39877583D1"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "Really? A million ways to get cobble and you wanna buy it?"
+			tasks: [{
+				count: 4L
+				id: "78649BBE89F74DAF"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Cobblestone Pack"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:sand"
+			id: "4CBF76181FBD6F74"
+			rewards: [{
+				count: 64
+				id: "23A1B0167006A11B"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "431C70EE8F06AFE5"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Snad Pack"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:gravel"
+			id: "5EFA36AC5CDA063C"
+			rewards: [{
+				count: 32
+				id: "4AE09D4FA4086F46"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "19CE28D9CC173F0B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Gravel Pack"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:clay_ball"
+			id: "5EF2AE6917299EE0"
+			rewards: [{
+				count: 32
+				id: "639BF31F751F05F3"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "4B2C5074D0854167"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Clay Pack"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "create:gearbox"
+			id: "2B64CA06C12F443D"
+			rewards: [
+				{
+					count: 32
+					id: "13B99FC762A47265"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2E4BDB5EEB2D1FAA"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39D98396BAC0EA6A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "45AE48D3406986E2"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5407363D4F392A06"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "2436B25AE3569FD6"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 6L
+				id: "41AD80BC41222F08"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Boxeses"
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:kelp"
+			id: "5FEDB9EFE13D7490"
+			rewards: [{
+				count: 16
+				id: "154777B0A061F605"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			subtitle: "Couldn't find an ocean, huh?"
+			tasks: [{
+				count: 4L
+				id: "07832C73D70BEC99"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Kelp Pack"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			icon: "minecraft:apple"
+			id: "52C649A5C522225F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63E001ED834879C0"
+				table_id: 6508186628680345473L
+				type: "choice"
+			}]
+			subtitle: "Vampire Options Available"
+			tasks: [{
+				count: 8L
+				id: "439A0FA146C59336"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Snack Pack"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "bloodmagic:blankrune"
+			id: "412659F8A1AF9E35"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2D2EA367E86F16E4"
+				table_id: 798828640171658895L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 6L
+				id: "78E8E613652FFD34"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Runeses"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:abjuration_essence"
+			id: "6B9F5DCE52980CB6"
+			rewards: [
+				{
+					count: 2
+					id: "5E177EE241DA7B86"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "06C204DE4D8C0EDD"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5927EC4C816E4DFC"
+					item: "ars_nouveau:air_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1B084E4878EFF95F"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3BB752B36DD4ED7A"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "36C90693F3B8E556"
+					item: "ars_nouveau:manipulation_essence"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1C61AF3BDEC6D23F"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 6L
+				id: "3EE46CFA5F731FA4"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Essenceses"
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:iron_ingot"
+			id: "5F274B8423ABE868"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4A12B7C79A983F52"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "7A09A01C46022C6F"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Iron Pack"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "minecraft:diamond"
+			id: "671F917D7B2DF7A5"
+			rewards: [{
+				count: 2
+				id: "48C387CD4AA19696"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "3AAB671B1EA79032"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Diamond Pack"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "create:andesite_alloy"
+			id: "47A9BFE2762AACCB"
+			rewards: [{
+				count: 32
+				id: "31563D5DF3DAFDE5"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "009792B98DC3241D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			title: "Please no more mining andesite"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "ars_additions:codex_entry"
+			id: "6D6D761F05D083F3"
+			rewards: [{
+				id: "79B169C0F82EA20D"
+				item: "ars_additions:codex_entry"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "4C41BC9979558B63"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Random Spell Unlock"
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "bloodmagic:ritualstone"
+			id: "72D4F605BA6F03F0"
+			rewards: [{
+				count: 8
+				id: "62DA714207263DC9"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "5A18CA707F4B31AB"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Do you have the stones brother"
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: "create:electron_tube"
+			id: "7376E029F6D0EFBD"
+			rewards: [
+				{
+					count: 4
+					id: "58AB1423ABAC820F"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74EB950675340BBE"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "6BD205E92B6397F4"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Your First Circuit"
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_nouveau:spell_parchment"
+				tag: { }
+			}
+			id: "32BCFAE53204B6A0"
+			rewards: [{
+				command: "/tp @s -47 154 152"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: {
+					Count: 1
+					id: "ars_nouveau:spell_parchment"
+					tag: { }
+				}
+				id: "1AAD10DE68A4C40E"
+				silent: true
+				title: "Return Scroll"
+				type: "command"
+			}]
+			subtitle: "This will TP you back to spawn!"
+			tasks: [{
+				count: 2L
+				id: "2A15C38ACF96281C"
+				item: "kubejs:iron_folk_coin"
+				type: "item"
+			}]
+			title: "Return Scroll"
+			x: -0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6355F8CDCF3AD857"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "quark:ancient_tome"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:feather_falling"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "7D4BF0E567D8B9F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0ADE0873B541D282"
+				table_id: 1771751485698249568L
+				type: "random"
+			}]
+			tasks: [{
+				count: 6L
+				id: "214A6AF246495C2A"
+				item: { Count: 6, id: "kubejs:iron_folk_coin" }
+				type: "item"
+			}]
+			title: "Random Tome Reward"
+			x: 1.0d
+			y: -10.5d
+		}
+	]
+	title: "Shop"
+}

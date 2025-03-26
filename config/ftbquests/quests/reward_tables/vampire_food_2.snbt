@@ -1,0 +1,11 @@
+{
+	icon: "kubejs:blood_vial"
+	id: "348F4694D1420F12"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ count: 4, item: "kubejs:blood_vial" }
+		{ count: 4, item: "bloodmagicdelight:weak_tau_ice_cream" }
+	]
+	title: "Vampire Food"
+}

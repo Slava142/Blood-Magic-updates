@@ -1,0 +1,395 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_story_so_far"
+	group: "45D8E0E5D3AD7EBC"
+	icon: "minecraft:grass_block"
+	id: "7E3460B00BB065DD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Welcome to Folktale! Enjoy a free gift on the house. These coins aren't used in any crafting recipes, but you'll find various uses for them as you play. Don't spend it all in one place!"]
+			id: "0FC94229421DDF62"
+			rewards: [{
+				id: "2CD1654D39C04456"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Welcome to the Folklands"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "7B913895AFEB2DD9"
+				title: "You have arrived!"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00D0CAED580CBD64"]
+			description: [
+				"By now you have a few folk coins from these quests, and you may have found more from the world. "
+				""
+				"Completing this quest will unlock a quest shop where you can spend your coins! "
+				""
+				"Make sure to check out player shops first, to see if you can find better prices."
+			]
+			disable_toast: true
+			hide_until_deps_complete: true
+			icon: "kubejs:copper_folk_coin"
+			id: "14D3FCBEBBB70B2E"
+			rewards: [{
+				id: "3FE112169BF2C2CE"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70CD6AE9302D2B90"
+				title: "Take me to the Shop!"
+				type: "checkmark"
+			}]
+			title: "The shop"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F1A8BF88BD463B0"]
+			description: [
+				"In Folktale we use another mod called &oOrigins.&r"
+				""
+				"Of course, you already know that, as you selected an origin when you began. At the end of this questline you'll have a chance to choose another if you feel you chose wrong. We know it can be a hard choice, so we'll provide some extra info in the following quests."
+			]
+			id: "28388122E56ACB65"
+			rewards: [{
+				id: "5CE77F2935F79481"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "748AA5A4D5B63383"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			title: "The origins"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"68B6062D2E2A18A9"
+				"50809C9B2DCB088C"
+				"2DA595FEFDEA2642"
+				"2C1829CAAE317336"
+			]
+			description: [
+				"One of the first changes you'll notice is that your base metals smelt into nuggets rather than ingots. Not everything in the folklands is as you would expect, and those of you familiar with mods will notice many more changes than just the simple vanilla ones we've added. "
+				""
+				"Take your time to adjust to the pack, and feel free to ask any questions you may have in our Discord."
+			]
+			hide_until_deps_complete: true
+			id: "4782DE1E08CCB4F3"
+			rewards: [{
+				id: "146F267F87A9C7D2"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "314A41014822454C"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			title: "Seriously?"
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7E062794C4FE5819"]
+			description: [
+				"If you're new to modded minecraft, welcome! This pack contains a few mods that you'll have a chance to explore in depth later. But for now, we'll introduce the most ubiquitously used mod: &lJust Enough Items&r, or JEI for short."
+				""
+				"The JEI can be found on the right side of your screen when you open your inventory. It's hidden by default to reduce visual clutter, but searching for an item will allow you to look at any recipes for it by left clicking on it in the JEI menu. If you right click instead, it will show you all recipes that &ouse&r that item. "
+				""
+				"Pro tip: You can search by mod ID. Try typing @create in the search bar to see everything from the Create mod."
+			]
+			id: "3F1A8BF88BD463B0"
+			rewards: [{
+				id: "0002D65D07D6E2EC"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C1CC22579F78125"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Using JEI"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0FC94229421DDF62"]
+			description: [
+				"Folktale is a modpack created by me, Southlight, as well as some friends who have helped with various tasks that simply would've been too much for me to handle."
+				""
+				"The purpose of our pack is to breathe new life into Minecraft, giving players that feeling they got the first time they played - a reminder of a time when we had to work together with our friends to build a thriving community in a fresh world, rather than just speed running to the end dragon. We all sincerely hope you'll enjoy."
+			]
+			hide_until_deps_complete: true
+			id: "7E062794C4FE5819"
+			rewards: [{
+				id: "07CAC8F3A4F66219"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A3ACE5FFDE151BE"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "What am I getting into?"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4782DE1E08CCB4F3"]
+			description: ["One thing you'll notice soon is that vanilla nether portals don't work. Don't worry, the nether isn't disabled. You're just going to have to find another way to get there."]
+			id: "490F7B8AA48B454C"
+			rewards: [{
+				id: "7D6440607E53AE19"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77112AB597314307"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Nether"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["06D07276B90EA3BA"]
+			description: [
+				"Here it is, the \"last\" chance to change your origin. Choose wisely!"
+				""
+				"If you &oreally&r want to change your race down the line, you can message a staff member on Discord and turn in all race-related benefits you've obtained in exchange for an orb of origin."
+			]
+			hide_until_deps_complete: true
+			icon: "origins:orb_of_origin"
+			id: "00D0CAED580CBD64"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "09575EFE19DBF0C6"
+					table_id: 1429496050343796427L
+					type: "choice"
+				}
+				{
+					id: "1C9F32D57E739E6A"
+					item: "kubejs:copper_folk_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "71F8D088E7416580"
+				type: "checkmark"
+			}]
+			title: "A Difficult Decision"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["490F7B8AA48B454C"]
+			description: [
+				"We're coming to the end of the beginning. By now you've been playing for a little while, and hopefully you've had some time to ruminate over your choice of origin. "
+				""
+				"If you're not enjoying what you picked, then you're in luck. Keep going a little bit longer!"
+			]
+			id: "06D07276B90EA3BA"
+			rewards: [{
+				id: "27AFECA85F490CE0"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55B12AD853C0FE61"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Second Thoughts?"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["14D3FCBEBBB70B2E"]
+			description: [
+				"We've arrived at the end of the starting quests. You should be well acquainted by now with the server. "
+				""
+				"Finally we can jump into the mods! "
+				""
+				"Completing this quest will unlock new sections of the questbook, including your origin questline. Be sure to check it out!"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:book"
+			id: "14A3A6F328C8F5FA"
+			rewards: [{
+				id: "0FBAB91E3D2971DB"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "419F9609288ABDE8"
+				title: "I'm ready for the mods"
+				type: "checkmark"
+			}]
+			title: "The Next Step"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["28388122E56ACB65"]
+			description: ["It's not much, but it's an honest origin. If you like advanced whacky systems to print basically any item you desire, or if you can name every model of train, Human is for you."]
+			hide_until_deps_complete: true
+			icon: "create:goggles"
+			id: "68B6062D2E2A18A9"
+			tasks: [{
+				id: "56A213EF236DB671"
+				title: "Human"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["28388122E56ACB65"]
+			description: [
+				"Genasi - Do you like magic? Do you like crafting your own spells from a giant library of effects, augments, and casting methods? Do you like cute creatures? Do you like magical automation of myriad tasks? Then Genasi is up your alley. "
+				""
+				"But be warned! You may have a rough time at the start. "
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:abjuration_essence"
+			id: "2DA595FEFDEA2642"
+			tasks: [{
+				id: "0C03974ECD6A488F"
+				title: "Genasi"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["28388122E56ACB65"]
+			description: [
+				"Dwarf - If the dark underbelly of the earth appeals to you, and if you fancy the idea of making your own customized tools with hundreds of modifiers to choose from, Dwarf is the one for you. "
+				""
+				"Just be prepared to shy away from daylight for a good while."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tconstruct:pickadze"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:seared_stone"
+						"tconstruct:seared_stone"
+						"tconstruct:seared_stone"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:searing"
+						}
+						{
+							level: 1
+							name: "tconstruct:pathing"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.15f
+						"tconstruct:durability": 1.3f
+						"tconstruct:mining_speed": 0.75f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 2.4149997f
+						"tconstruct:attack_speed": 1.3f
+						"tconstruct:durability": 248.62498f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 5.3625f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "2C1829CAAE317336"
+			tasks: [{
+				id: "45C86465EC86E456"
+				title: "Dwarf"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["28388122E56ACB65"]
+			description: [
+				"Vampire - If granting yourself myriad powers by sacrificing the lives of any and every living being in sight, all while being nigh undying, sounds appealing, Vampire is for you. "
+				""
+				"Just be aware that the power Vampires hold comes with a steep price. Prepare to fear the sun and watch your hunger deplete rapidly whenever your health gets low."
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:blood_vial"
+			id: "50809C9B2DCB088C"
+			tasks: [{
+				id: "094077241B603F11"
+				title: "Vampire"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E062794C4FE5819"]
+			description: [
+				"Special thanks to "
+				""
+				"- Slava, for keeping me sane through the development process, and doing all the tasks I didn't feel like doing"
+				"- Jackpot, for spriting the custom items and occasionally giving me a brilliant idea for every twenty braindead ones"
+				"- Alyss, for helping manage our Discord community"
+				"- Zaerie, for our cover art... And for keeping Jackpot in line"
+				"- Tate, for making custom modeled items"
+				"- You, the players, without whom this whole endeavour would be pointless"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:writable_book"
+			id: "32FE048257DE044F"
+			subtitle: "Showing appreciation to those who made this possible"
+			tasks: [{
+				id: "62B35C0D1E167856"
+				type: "checkmark"
+			}]
+			title: "Special Thanks"
+			x: -2.0d
+			y: -2.0d
+		}
+	]
+	title: "New Beginnings"
+}

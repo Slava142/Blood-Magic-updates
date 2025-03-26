@@ -1,0 +1,507 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "youre_a_wizard_harry"
+	group: "6924482853C613F8"
+	icon: "ars_nouveau:creative_spell_book"
+	id: "68E88E839FE3304E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["736CCD21D8BFC655"]
+			description: [
+				"You may have noticed that, while you have access to the other content mods, the other races cannot so easily access Ars Nouveau. "
+				""
+				"But there is a way to change this."
+				""
+				"If you decide to craft a Source Tonic, you can give it to a non-Genasi to awaken their latent talent."
+				""
+				"But beware. If you do so, they will have access to anything Ars-related that isn't in this chapter."
+			]
+			hide_until_deps_complete: true
+			id: "4D40F5B37370AA22"
+			shape: "hexagon"
+			subtitle: "Choose Wisely"
+			tasks: [{
+				id: "433F7C6F698B1B44"
+				title: "The Basics of a Nuisance"
+				type: "checkmark"
+			}]
+			title: "Creating Trouble"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D40F5B37370AA22"]
+			description: [""]
+			id: "2031B0D06F180F5A"
+			shape: "hexagon"
+			subtitle: "I hope you know what you're doing"
+			tasks: [{
+				id: "20066C481AE6B6C3"
+				item: "kubejs:source_tonic"
+				type: "item"
+			}]
+			title: "Spreading the Love"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4B4735E2FC18B2E6"]
+			hide_until_deps_complete: true
+			id: "339939539E165241"
+			tasks: [{
+				id: "49FA59280511AC1B"
+				item: "kubejs:earth_tonic"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5F7FEF7AA9394905"]
+			hide_until_deps_complete: true
+			id: "592F43E415EFC994"
+			tasks: [{
+				id: "27DE9DDFC64EF80E"
+				item: "kubejs:water_tonic"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5D4E15DFF614A157"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "2FF267D99BE9E523"
+			tasks: [{
+				id: "0C9E00B1DCE055DE"
+				item: "kubejs:air_tonic"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5D9C321A45F1C194"]
+			hide_until_deps_complete: true
+			id: "4AAF8C347DDCAFEB"
+			tasks: [{
+				id: "1478ED55070BEC19"
+				item: "kubejs:fire_tonic"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6CE47FC051E00154"
+				"214D5C72AE5853D5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You now have Knowledge of Fire, allowing you to craft a Fire Tonic. "
+				""
+				"This tonic will grant you immunity to all sources of fire damage."
+			]
+			icon: {
+				Count: 1
+				id: "ars_elemental:fire_caster_tome"
+				tag: { }
+			}
+			id: "5D9C321A45F1C194"
+			invisible: true
+			rewards: [{
+				command: "/ftbquests change_progress @s complete 214D5C72AE5853D5"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "kubejs:fire_tonic"
+				id: "305E1066366F12D7"
+				silent: true
+				title: "Fire Tonic Unlocked"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1
+					id: "ars_elemental:fire_caster_tome"
+					tag: { }
+				}
+				id: "18B3FCAC3A614790"
+				type: "dimension"
+			}]
+			title: "Knowledge of Fire"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"05DD7395335B0528"
+				"74FB2D3216CAEBF6"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You now have Knowledge of Water, allowing you to craft a Water Tonic. "
+				""
+				"This tonic will grant you unlimited breathing, better vision, and faster speed when underwater."
+			]
+			id: "5F7FEF7AA9394905"
+			invisible: true
+			rewards: [{
+				command: "/ftbquests change_progress @s complete 74FB2D3216CAEBF6"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "kubejs:water_tonic"
+				id: "217906C702458E5D"
+				silent: true
+				title: "Power Unlocked"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1
+					id: "ars_elemental:water_caster_tome"
+					tag: { }
+				}
+				id: "7442AFEE7D18A5FD"
+				title: "Knowledge of Water"
+				type: "dimension"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"52860CC9FEAD8E24"
+				"69CDE32C8CFC5E58"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You now have Knowledge of Air, allowing you to craft a Air Tonic. "
+				""
+				"This tonic will grant you immunity to fall damage."
+			]
+			id: "5D4E15DFF614A157"
+			invisible: true
+			rewards: [{
+				command: "/ftbquests change_progress @s complete 69CDE32C8CFC5E58"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "ars_nouveau:air_essence"
+				id: "6DA53FB614E373E4"
+				silent: true
+				title: "Tonic Unlocked"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1
+					id: "ars_elemental:air_caster_tome"
+					tag: { }
+				}
+				id: "745F90D990DD0DE9"
+				title: "Knowledge of Air"
+				type: "dimension"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"090BC2B209D2A2B4"
+				"4B5614FA476E5538"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You now have Knowledge of Earth, allowing you to craft a Earth Tonic. "
+				""
+				"This tonic will grant you the ability to walk up whole blocks as though they were slabs."
+			]
+			hide_until_deps_complete: false
+			id: "4B4735E2FC18B2E6"
+			invisible: true
+			rewards: [{
+				command: "/ftbquests change_progress @s complete 4B5614FA476E5538"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "kubejs:earth_tonic"
+				id: "5B7B3EE46156BBDB"
+				silent: true
+				title: "Power Unlocked"
+				type: "command"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					Count: 1
+					id: "ars_elemental:earth_caster_tome"
+					tag: { }
+				}
+				id: "12B0EED561624113"
+				title: "Knowledge of Earth"
+				type: "dimension"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2704A3E1AED88986"
+				"14A3A6F328C8F5FA"
+			]
+			description: [
+				"Welcome to being a Genasi. Life probably seems a little rough right now, but don't worry. It gets better."
+				""
+				"A lot better."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_nouveau:dominion_wand"
+				tag: { }
+			}
+			id: "736CCD21D8BFC655"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "6AFEB770098B132B"
+				type: "dimension"
+			}]
+			title: "Magical Girl Transformation"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4551F0B8E84F7084"]
+			hide_until_deps_complete: true
+			id: "69A41E14EA534912"
+			tasks: [{
+				id: "734C40A68C895188"
+				item: {
+					Count: 1
+					id: "ars_elemental:fire_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4551F0B8E84F7084"]
+			hide_until_deps_complete: true
+			id: "492E6774A5CCAC52"
+			tasks: [{
+				id: "16EC6ACDE0B2B79F"
+				item: {
+					Count: 1
+					id: "ars_elemental:air_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4551F0B8E84F7084"]
+			hide_until_deps_complete: true
+			id: "6CA2B17FEAB66069"
+			tasks: [{
+				id: "17B62FCB146E1186"
+				item: {
+					Count: 1
+					id: "ars_elemental:earth_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4551F0B8E84F7084"]
+			hide_until_deps_complete: true
+			id: "32D47323B41E060E"
+			tasks: [{
+				id: "68D6760CAEE0FD0C"
+				item: {
+					Count: 1
+					id: "ars_elemental:aqua_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["623B982D98675E48"]
+			hide_until_deps_complete: true
+			id: "014B65C3E80888A4"
+			tasks: [{
+				id: "0196F2A37E3B307A"
+				item: "ars_elemental:fire_focus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["623B982D98675E48"]
+			hide_until_deps_complete: true
+			id: "35A46993DC73A9E0"
+			tasks: [{
+				id: "21F1DA528403A410"
+				item: "ars_elemental:water_focus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["623B982D98675E48"]
+			hide_until_deps_complete: true
+			id: "4C52E8AD92378CDA"
+			tasks: [{
+				id: "3158ABBECBAEC623"
+				item: "ars_elemental:air_focus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["623B982D98675E48"]
+			hide_until_deps_complete: true
+			id: "2B1E5AA5F3605EFD"
+			tasks: [{
+				id: "363EA7B0230579AB"
+				item: "ars_elemental:earth_focus"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21E92254715584C8"]
+			description: [
+				"In blazing lands where sand burns bright,"
+				"I sink in fire, yet stand upright."
+				"Beneath the waves of molten dread,"
+				"On scorching stone, I dare to tread."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:fire_essence"
+			id: "214D5C72AE5853D5"
+			optional: true
+			title: "Trial by Fire"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21E92254715584C8"]
+			description: [
+				"A flick'ring light midst frozen highs,"
+				"Above the clouds, it softly lies."
+				"In jagged peaks where few may tread,"
+				"A fading hope where warmth has fled."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:air_essence"
+			id: "69CDE32C8CFC5E58"
+			optional: true
+			title: "A Candle in the Wind"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21E92254715584C8"]
+			description: [
+				"A thorny beast from deeps below,"
+				"With glaring eye and spines aglow."
+				"To take its strength, a bitter bite,"
+				"Steel your mind, and claim your might."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:water_essence"
+			id: "74FB2D3216CAEBF6"
+			optional: true
+			title: "Riptide"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21E92254715584C8"]
+			description: [
+				"In crystal halls, where echoes sing,"
+				"Amidst the stones that softly ring."
+				"Within the depths of earth I stand,"
+				"A treasure deep beneath the land."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:earth_essence"
+			id: "4B5614FA476E5538"
+			optional: true
+			title: "Rolling Boulder"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["736CCD21D8BFC655"]
+			description: ["Elemental Foci are a lategame tool that will boost your elemental magic further. "]
+			hide_until_deps_complete: true
+			id: "623B982D98675E48"
+			tasks: [{
+				id: "37827E8DD68CCCA9"
+				title: "Elemental Foci"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["736CCD21D8BFC655"]
+			description: ["In the lategame of Ars, you'll have the option to specialize in an element. This will grant you great power with that element, but it will be expensive to achieve."]
+			hide_until_deps_complete: true
+			id: "4551F0B8E84F7084"
+			tasks: [{
+				id: "4F2AE7178EF733B8"
+				title: "Elemental Attire"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["736CCD21D8BFC655"]
+			description: [
+				"You may have noticed that as a Genasi you don't seem to have any helpful powers, only two downsides: Frail and Weak."
+				""
+				"This is because Genasi must prove themselves to unlock their powers. Solve the four riddles ahead and do as instructed to unlock your true potential."
+			]
+			id: "21E92254715584C8"
+			tasks: [{
+				id: "3836BE81E31D7A63"
+				title: "Attuning to the Elements"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+	]
+	title: "There's Too Many Darn Wizards!"
+}

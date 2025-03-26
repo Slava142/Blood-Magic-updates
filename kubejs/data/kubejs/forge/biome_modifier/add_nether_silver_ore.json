@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#minecraft:is_nether",
+    "features": "kubejs:nether_silver_ore_placer",
+    "step": "underground_ores"
+}

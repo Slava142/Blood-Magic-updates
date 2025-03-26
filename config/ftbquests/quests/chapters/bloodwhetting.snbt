@@ -1,0 +1,539 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bloodwhetting"
+	group: "72BF49A74FE1E2A8"
+	hide_quest_until_deps_complete: true
+	icon: "bloodmagic:weakbloodorb"
+	id: "1FB7BFEBC0474489"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["431729A8BF0C88E4"]
+			description: ["The Blood Altar is the first step of your journey into Blood Magic, and it will be the central power unit for your entire blood network."]
+			hide_until_deps_complete: true
+			id: "76DC750800B96E0F"
+			rewards: [{
+				id: "11EB203F25DEE959"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63F36FE4C37EB99F"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: ["The Blood Orb will allow you to access your Blood Altar from a distance. This item and its future iterations are absolutely crucial to your sanguimancy."]
+			hide_until_deps_complete: true
+			id: "25D8B0B100CE7C98"
+			rewards: [{
+				id: "14E27C245F32EB1E"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Starting your Soul Network"
+			tasks: [{
+				id: "7B9A1496E405F3E3"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			title: "Your First Ball of Blood"
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["25D8B0B100CE7C98"]
+			description: ["Unlocking a new tier of orb may unlock some new crafting recipes. Do some poking around JEI to see."]
+			hide_until_deps_complete: true
+			id: "22C4888005CFE793"
+			rewards: [{
+				id: "406A2C5990D2B26C"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Another tier!"
+			tasks: [{
+				id: "48CDF4FCBC4C700A"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			title: "Awww it got Bigger"
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["22C4888005CFE793"]
+			description: ["If you're not a Vampire, this is where your foray into Blood Magic will hit a cap. Perhaps in the future there will be a way to increase your hemalurgic prowess."]
+			hide_until_deps_complete: true
+			id: "74BEA859890F52D0"
+			rewards: [{
+				id: "52C39C9B7A3FF19D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "End of the line?"
+			tasks: [{
+				id: "6837A200607D6B9B"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			title: "Don't you think that might be enough?"
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["53201EB0960672A8"]
+			description: ["Simply left click with this in hand to select the ritual you want, then right click your master ritual stone to build it! So much easier than inscribing everything yourself."]
+			id: "483C1BB281F0A3C8"
+			rewards: [{
+				id: "7C3253830EF726B4"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14316FE96F702844"
+				item: "bloodmagic:ritualdiviner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2AC1EB6CBC76DFC8"]
+			description: [
+				"Now that you're a third tier Sanguimancer, you have access to Rituals. "
+				""
+				"Rituals will allow you to leverage your blood to create great effects in the world, but they require a bit of setup."
+				""
+				"Start by crafting a Master Ritual Stone. This will be the nexus of any ritual you start from now on. In addition, make four basic ritual stones to build our first ritual - Serenade of the Nether."
+			]
+			hide_until_deps_complete: true
+			id: "103FA84178441BC3"
+			rewards: [{
+				id: "7D9D305FD3DB6E62"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Mass Magic"
+			tasks: [
+				{
+					count: 4L
+					id: "72E3CB1B3FA330A3"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					id: "6F463A06B314BF8D"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+			]
+			title: "Getting Started with Rituals"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["251321846B899C58"]
+			id: "53201EB0960672A8"
+			rewards: [{
+				id: "06BBE26C6082702B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "A simple ritual"
+			tasks: [{
+				count: 4L
+				id: "406C472440B9A557"
+				item: "bloodmagic:fireritualstone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["103FA84178441BC3"]
+			description: [
+				"Rituals will require various types of ritual stone. For our Serenade of the Nether, we're only going to need the Fire Inscription Tool. "
+				""
+				"Still, you should make them all. Later rituals are going to require much, much more than just 4 stones, and you'll want a Ritual Diviner from the next quest to help automate that process for you."
+			]
+			id: "251321846B899C58"
+			rewards: [{
+				id: "55FAC1AC0DE8D493"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24D4B0FD4604EE4A"
+				item: {
+					Count: 1
+					id: "bloodmagic:firescribetool"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44D3BE08CA523F3F"]
+			description: [
+				"The Hellfire Forge will be your main station for making tools. But it requires a unique fuel source."
+				""
+				"Demon Will is what we use to power our creation here. Obtain your first demon will by crafting a Soul Snare and using it on a mob before slaughtering it."
+			]
+			hide_until_deps_complete: true
+			icon: "bloodmagic:soulforge"
+			id: "6784F024B4C8FA1E"
+			rewards: [{
+				id: "7F0E5B1C5C0F83C7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Bending your will"
+			tasks: [
+				{
+					id: "429900CF5FD25C81"
+					item: "bloodmagic:soulforge"
+					type: "item"
+				}
+				{
+					id: "0DA102CDA47EEF88"
+					item: "bloodmagic:soulsnare"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["74E60E8FE0E327E9"]
+			description: [
+				"Sigils will allow you to transmute blood from your network into various miracles. For now, start with a water sigil. This will allow you to make a water source block wherever you want, so long as you have the blood to place it."
+				""
+				"If you run out of blood, of course... &oYou can always use your own.&r"
+			]
+			hide_until_deps_complete: true
+			id: "0681C7774C83AFC2"
+			rewards: [{
+				id: "022FAA83B24BC9B4"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BAC16132AE785EB"
+				item: "bloodmagic:watersigil"
+				type: "item"
+			}]
+			title: "The Power of Sigils"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: ["Simply infuse some stone with blood and you have a slate! These will be used in many crafting recipes for Blood Magic, so be prepared to make more."]
+			hide_until_deps_complete: true
+			id: "44D3BE08CA523F3F"
+			rewards: [{
+				id: "14110365CC3B3E82"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12B709796B2EC4B8"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2AC1EB6CBC76DFC8"]
+			description: [
+				"The Alchemical Reaction Chamber - or ARC - is a higher tier station that will allow you to vastly multiply your output from ores (including netherite). "
+				""
+				"It's an involved process, but it's worth it."
+			]
+			hide_until_deps_complete: true
+			id: "32D17517F417B063"
+			rewards: [{
+				id: "6A7B71C8405E9A0D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "All the metal"
+			tasks: [{
+				id: "474E9E9558579A28"
+				item: "bloodmagic:alchemicalreactionchamber"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6784F024B4C8FA1E"]
+			description: [
+				"Your forging is going to require a lot more demon will. Fortunately, there's a better way to store them."
+				""
+				"Craft a tartaric gem. This item will function as a holding bag of sorts, able to absorb any demon wills on the ground. Use it to power your forge as well as your sentient tools."
+			]
+			id: "0508F7622568A5D8"
+			rewards: [{
+				id: "477C380F10254C14"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "A lot more where that came from"
+			tasks: [{
+				id: "12F82E0E7DC7B5FA"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgempetty"
+					tag: {
+						souls: 64.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: ["Want to upgrade the Blood Altar to the next tier? That's going to require some runes."]
+			hide_until_deps_complete: true
+			id: "4E00F144BF9D3E3C"
+			rewards: [{
+				id: "462B19364861CE71"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "62890353B6F71477"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			title: "Tier 2"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E00F144BF9D3E3C"]
+			hide_until_deps_complete: true
+			id: "51C565D5CDC0E83C"
+			rewards: [{
+				id: "7F73551758A6F798"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Gonna need a bigger space..."
+			tasks: [{
+				count: 28L
+				id: "35BA5FFCDD895A1B"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			title: "Tier 3"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: ["The sacrificial knife will allow you to sacrifice your own health, using your own blood to fill your altar. That's pretty brutal..."]
+			hide_until_deps_complete: true
+			id: "3A6D7F839F01D934"
+			rewards: [{
+				id: "07F733CA88512C94"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Make sure to hold the pointy end that wa- oh wait..."
+			tasks: [{
+				id: "64E4EEE739F3338E"
+				item: {
+					Count: 1
+					id: "bloodmagic:sacrificialdagger"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0508F7622568A5D8"]
+			description: [
+				"It's time to create your first tool in the forge. "
+				""
+				"We strongly recommend you make the Sentient Sword. If you had to keep using soul snares every time you needed demon will, you would quickly go insane. And nobody wants to deal with an insane vampire. "
+				""
+				"The sentient sword will harvest demon will from your slain enemies on its own, allowing you to fill your tartaric gem."
+			]
+			id: "3EA1C76C746F2BF5"
+			rewards: [{
+				id: "73851B6EFAAEF1E7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Your first tool really should be this one"
+			tasks: [{
+				id: "529021D59900974C"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: [
+				"Our quests here are meant to be a visual guide for beginners. For more detailed info, tips and more, the in-game documentation book is your best bet. "
+				""
+				"Craft one of these and get learning!"
+			]
+			hide_until_deps_complete: true
+			id: "7A73884331A447B5"
+			rewards: [{
+				id: "230E5E92ED1B2F78"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CB1F082529AF1B9"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "For More Details..."
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"44D3BE08CA523F3F"
+				"4E00F144BF9D3E3C"
+			]
+			hide_until_deps_complete: true
+			id: "62BF3EC380895707"
+			rewards: [{
+				id: "2B89DC7A7FF02F1A"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Better slates!"
+			tasks: [{
+				id: "753B7B4235CBF662"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"62BF3EC380895707"
+				"51C565D5CDC0E83C"
+			]
+			hide_until_deps_complete: true
+			id: "2AC1EB6CBC76DFC8"
+			rewards: [{
+				id: "0EEC21ACB80BCF7A"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Better better slates!"
+			tasks: [{
+				id: "419CDF4C74EF1CD6"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["76DC750800B96E0F"]
+			description: ["The Alchemy Table will be one of the mainstays of your ability to create items with Blood Magic. Put it somewhere convenient!"]
+			hide_until_deps_complete: true
+			id: "74E60E8FE0E327E9"
+			rewards: [{
+				id: "6BE53F0236CDEF5A"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "An edgy crafting table!"
+			tasks: [{
+				id: "2B8102E2B0518062"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4E00F144BF9D3E3C"]
+			description: [
+				"The default Blood Altar is great and all, but it could be better."
+				""
+				"Now that you have a Tier 2 Blood Altar, you can craft Runes. Runes will allow you to modify your blood altar to suit your needs, so long as they're placed within the greater structure that defines your altar tier."
+				""
+				"For now, make a Speed Rune. Speed will increase all your Altar's crafting processes. Convenient, no?"
+				""
+				"For more info on the various runes available to you, as well as how to build with them, consult your questbook."
+			]
+			hide_until_deps_complete: true
+			id: "6552C67ED3597A18"
+			rewards: [{
+				id: "3C075A7631A9E2A7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Modifying the Altar"
+			tasks: [{
+				id: "4AB169094FB8E26E"
+				item: "bloodmagic:speedrune"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["483C1BB281F0A3C8"]
+			id: "5D4746F9301AE707"
+			rewards: [{
+				id: "3DD86B0E0A9A27EF"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Much more complicated than dripstone!"
+			tasks: [{
+				id: "2F2A983D2586E325"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "Infinite Lava"
+			x: -2.0d
+			y: -5.0d
+		}
+	]
+	title: "Bloodletting"
+}

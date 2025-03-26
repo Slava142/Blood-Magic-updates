@@ -1,0 +1,160 @@
+
+[origins]
+
+	[origins."folktale:dwarf"]
+		enabled = true
+		"folktale:weakness/too_bright" = true
+		"folktale:strengths/digger" = true
+		"folktale:weakness/dwarfsmall" = true
+		"folktale:strengths/sturdy" = true
+		"folktale:gamestages/dwarf" = true
+		"folktale:weakness/dwarf/too_bright" = true
+		"folktale:strengths/dwarf/digger" = true
+		"folktale:weakness/dwarf/small" = true
+		"folktale:strengths/dwarf/sturdy" = true
+		"folktale:hidden/jumpheight" = true
+		"folktale:misc/standardhealth" = true
+		"folktale:misc/racism" = true
+		"folktale:misc/disablelivingarmor" = true
+		"folktale:misc/livingarmor" = true
+		"folktale:misc/elementalarmor" = true
+		"folktale:strengths/dwarf/sunglasses" = true
+
+	[origins."folktale:human"]
+		enabled = true
+		"folktale:recipes/andesite_alloy" = true
+		"folktale:gamestages/human" = true
+		"folktale:strengths/human/learning" = true
+		"folktale:misc/standardhealth" = true
+		"folktale:misc/disablelivingarmor" = true
+		"folktale:misc/livingarmor" = true
+		"folktale:misc/elementalarmor" = true
+
+	[origins."folktale:vampire"]
+		enabled = true
+		"folktale:gamestages/vampire" = true
+		"folktale:strengths/vampire/undying" = true
+		"folktale:weakness/vampire/bloodthirst" = true
+		"folktale:strengths/vampire/regeneration" = true
+		"folktale:weakness/vampire/hungry" = true
+		"folktale:weakness/vampire/nocturnal" = true
+		"folktale:strengths/vampire/healthy" = true
+		"folktale:weakness/vampire/undead" = true
+		"folktale:strengths/vampire/nightvision" = true
+		"folktale:weakness/vampire/bloodyeater" = true
+		"folktale:misc/racism" = true
+		"folktale:misc/elementalarmor" = true
+		"folktale:weakness/vampire/parasol" = true
+
+	[origins."folktale:genasi"]
+		enabled = true
+		"folktale:gamestages/genasi" = true
+		"folktale:strengths/genasi/air" = true
+		"folktale:strengths/genasi/water" = true
+		"folktale:strengths/genasi/fire" = true
+		"folktale:strengths/genasi/earth" = true
+		"folktale:weakness/genasi/frail" = true
+		"folktale:weakness/genasi/weak" = true
+		"folktale:misc/racism" = true
+		"folktale:misc/disablelivingarmor" = true
+		"folktale:misc/livingarmor" = true
+		"folktale:genasi_unlocks/air" = true
+		"folktale:genasi_unlocks/water" = true
+		"folktale:genasi_unlocks/fire" = true
+		"folktale:genasi_unlocks/earth" = true
+		"folktale:misc/remove_powers" = true
+
+	[origins."origins:enderian"]
+		enabled = true
+		"origins:throw_ender_pearl" = true
+		"origins:water_vulnerability" = true
+		"origins:pumpkin_hate" = true
+		"origins:extra_reach" = true
+		"origins:ender_particles" = true
+		"origins:damage_from_potions" = true
+
+	[origins."origins:human"]
+		enabled = true
+
+	[origins."origins:feline"]
+		enabled = true
+		"origins:fall_immunity" = true
+		"origins:sprint_jump" = true
+		"origins:velvet_paws" = true
+		"origins:nine_lives" = true
+		"origins:weak_arms" = true
+		"origins:scare_creepers" = true
+		"origins:cat_vision" = true
+
+	[origins."origins:elytrian"]
+		enabled = true
+		"origins:elytra" = true
+		"origins:launch_into_air" = true
+		"origins:aerial_combatant" = true
+		"origins:light_armor" = true
+		"origins:claustrophobia" = true
+		"origins:more_kinetic_damage" = true
+
+	[origins."origins:shulk"]
+		enabled = true
+		"origins:shulker_inventory" = true
+		"origins:natural_armor" = true
+		"origins:strong_arms" = true
+		"origins:strong_arms_break_speed" = true
+		"origins:no_shield" = true
+		"origins:more_exhaustion" = true
+
+	[origins."origins:merling"]
+		enabled = true
+		"origins:water_breathing" = true
+		"origins:water_vision" = true
+		"origins:aqua_affinity" = true
+		"origins:swim_speed" = true
+		"origins:like_water" = true
+		"origins:aquatic" = true
+		"origins:conduit_power_on_land" = true
+		"origins:air_from_potions" = true
+
+	[origins."origins:phantom"]
+		enabled = true
+		"origins:phantomize" = true
+		"origins:translucent" = true
+		"origins:phasing" = true
+		"origins:invisibility" = true
+		"origins:burn_in_daylight" = true
+		"origins:hunger_over_time" = true
+		"origins:fragile" = true
+		"origins:phantomize_overlay" = true
+
+	[origins."origins:arachnid"]
+		enabled = true
+		"origins:climbing" = true
+		"origins:master_of_webs" = true
+		"origins:carnivore" = true
+		"origins:fragile" = true
+		"origins:arthropod" = true
+
+	[origins."origins:blazeborn"]
+		enabled = true
+		"origins:fire_immunity" = true
+		"origins:nether_spawn" = true
+		"origins:burning_wrath" = true
+		"origins:hotblooded" = true
+		"origins:water_vulnerability" = true
+		"origins:flame_particles" = true
+		"origins:damage_from_snowballs" = true
+		"origins:damage_from_potions" = true
+
+	[origins."origins:avian"]
+		enabled = true
+		"origins:slow_falling" = true
+		"origins:fresh_air" = true
+		"origins:like_air" = true
+		"origins:tailwind" = true
+		"origins:lay_eggs" = true
+		"origins:vegetarian" = true
+
+	[origins."showcase:showcase"]
+		enabled = true
+		"showcase:dmg" = true
+

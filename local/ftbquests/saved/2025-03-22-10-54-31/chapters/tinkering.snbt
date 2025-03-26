@@ -1,0 +1,355 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tinkering"
+	group: "72BF49A74FE1E2A8"
+	icon: "tconstruct:smeltery_controller"
+	id: "036F169073587ED6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"78D95039A143913F"
+				"4560156C9D2507DB"
+				"7A809F191CFA0A76"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Mix sandy gravel and wet clay together to make Grout! Don't you wish we could've just crafted it?"]
+			id: "1D232E73D2E31AF9"
+			rewards: [{
+				id: "2F671C536BED0816"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Why did we have to do this?"
+			tasks: [{
+				id: "55E5A510D5AD11FC"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1D232E73D2E31AF9"]
+			description: [
+				"Now that we have seared bricks, we can use these to make the various components of our smeltery. "
+				""
+				"Remember to check your JEI for recipes."
+			]
+			hide_until_deps_complete: true
+			id: "650B6B3F24B69926"
+			rewards: [{
+				id: "2886055F11895CEF"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Smelt Da Grout!"
+			tasks: [{
+				id: "349786E7A9BD535D"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55F0B6A504F55E74"]
+			hide_until_deps_complete: true
+			id: "6E5900740953C450"
+			tasks: [{
+				id: "626234311793E04A"
+				type: "checkmark"
+			}]
+			title: "The Basics of Metallurgy"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["650B6B3F24B69926"]
+			description: ["Our main component is a Seared Melter, which will be what we interface with to smelt our ores."]
+			id: "54B47BBEDC1AE132"
+			rewards: [{
+				id: "561CB20E7B471DE6"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "488C2ED3E95C9F16"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["650B6B3F24B69926"]
+			description: ["Our melter will need fuel! Attach this beneath your melter and fill it with lava to power the multiblock."]
+			id: "6E8F2AB064C5D778"
+			rewards: [{
+				id: "324E97FDEF172746"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0473BF75B9F13D80"
+				item: "tconstruct:seared_fuel_tank"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["650B6B3F24B69926"]
+			description: ["Of course, we need something to pour our metals into! We can fill this basin with liquid metals until we have a block of metal."]
+			id: "5ACDEA1DB58BDBBB"
+			rewards: [{
+				id: "18D752C0EEF3E587"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0960B6F0D878FEEF"
+				item: "tconstruct:seared_basin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6DAC411E994AC843"
+				"5ACDEA1DB58BDBBB"
+				"54B47BBEDC1AE132"
+				"6E8F2AB064C5D778"
+			]
+			description: ["The melter is nice and all, but only being able to input three ores at a time is... somewhat painful. The next step is making it bigger. We can start with a Smeltery Controller."]
+			hide_until_deps_complete: true
+			id: "631EFB6098F43FC1"
+			rewards: [{
+				id: "46057BD8AF839D0E"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "005E5507615DF1CE"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6F962892E5033568"
+				"333C8BF31E327451"
+			]
+			description: [
+				"Like the basin, the casting table is for pouring out our liquid metal."
+				""
+				"The casting table differs in that you'll add casts to it to change the shape of what you're pouring. Continue the quests to make your first cast - ingot."
+			]
+			id: "78D666AC32E9E3C1"
+			rewards: [{
+				id: "3D780550DD03EC57"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21FFDAD58FDF294C"
+				item: "tconstruct:seared_table"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["650B6B3F24B69926"]
+			description: ["But we can't just teleport our molten ore from the melter to the basin! We need a faucet with which to pour!"]
+			id: "6DAC411E994AC843"
+			rewards: [{
+				id: "70C3627D0EFE14B0"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31644E922C5A34F0"
+				item: "tconstruct:seared_faucet"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["631EFB6098F43FC1"]
+			description: [
+				"Unlike the melter, our larger smeltery is going to need a specific block for pouring out it's contents."
+				""
+				"Don't worry, it still needs a faucet."
+			]
+			id: "6F962892E5033568"
+			rewards: [{
+				id: "0E0FC2BD744D3760"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5092C59BB1BBFCF3"
+				item: "tconstruct:seared_drain"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["78D666AC32E9E3C1"]
+			description: [
+				"Sand casts are consumed when you pour metal in them, but can be handy if you don't have gold. Make a blank sand cast, put it in your table, and place an ingot inside, then take the ingot back out. "
+				""
+				"It's nice, because the ingot isn't consumed!"
+			]
+			id: "239D75A2316A46AE"
+			rewards: [{
+				id: "3F39498071895192"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "627742FD2FD049F6"
+				item: "tconstruct:blank_sand_cast"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["78D666AC32E9E3C1"]
+			description: ["To make gold casts, place an ingot in an empty casting table and pour liquid gold over it. This will consume the ingot, so use one you don't need!"]
+			id: "2FADB5DECDC9CB61"
+			rewards: [{
+				id: "37E005ADDD2D76C8"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7056A41EF45B9EC3"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["78D95039A143913F"]
+			description: ["Use a water-filled spout over a depot to douse your clay!"]
+			id: "7A809F191CFA0A76"
+			rewards: [{
+				id: "7DC5E88D48BBB155"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "441CD4A8C69EE9E4"
+				item: "kubejs:wet_clay"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E5900740953C450"]
+			description: ["If you want to make a smeltery, you're going to need to dive into some basic Create first. Come back when you have a mechanical mixer setup!"]
+			icon: "create:mechanical_mixer"
+			id: "78D95039A143913F"
+			subtitle: "Dwarves can skip this!"
+			tasks: [{
+				id: "310DD12B6BC732FB"
+				title: "Mixing"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["78D95039A143913F"]
+			description: ["Mix sand and gravel together!"]
+			id: "4560156C9D2507DB"
+			rewards: [{
+				id: "0060CD85360C795B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "097F4CAD1D8DFA81"
+				item: "kubejs:sandy_gravel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"239D75A2316A46AE"
+				"2FADB5DECDC9CB61"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Finally! Finally!! We can create actual ingots at a 1:1 ratio! Except no, it's even better! Our smeltery will give us 1:25 ingots to every 1 raw ore we insert!"]
+			id: "79B5881563EA73F6"
+			rewards: [{
+				id: "29010F4C151F8750"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18E901554BB620F1"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Finally!"
+			x: -0.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["79B5881563EA73F6"]
+			description: ["Our smeltery has a hidden function: Alloying! For extra credit, throw in copper and tin to make brass! Your local human will thank you."]
+			hide_until_deps_complete: true
+			id: "69343FFC02054829"
+			rewards: [{
+				id: "41EC658FCCD94ABD"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F3682FD2344DD3F"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Extra Credit"
+			x: -0.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["631EFB6098F43FC1"]
+			description: [
+				"You'll notice when you place your smeltery controller that red outlines have appeared in the world. These are a guideline telling you to place more seared bricks to complete the multiblock. "
+				""
+				"Any kind of seared stone will work here, so pick the one you find the most aesthetically appealing."
+			]
+			id: "333C8BF31E327451"
+			rewards: [{
+				id: "2A0331AAC4082C74"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4519BE338EE2E23A"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+	]
+	title: "Tinkering"
+}

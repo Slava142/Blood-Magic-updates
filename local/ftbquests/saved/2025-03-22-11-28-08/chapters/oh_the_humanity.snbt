@@ -1,0 +1,800 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "oh_the_humanity"
+	group: "72BF49A74FE1E2A8"
+	icon: "create:mechanical_arm"
+	id: "7F644C901C1BBBEC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["34C2094185070065"]
+			description: ["Welcome to Create. First time? Don't worry about it. Your friendly guide is here to help! If I were you I would start by finding andesite. There are plenty pockets of the stuff underground, so get digging!"]
+			id: "309CD61BD1063EC5"
+			rewards: [{
+				id: "44E62F350A4E0CC9"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07D97F458C435ABB"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Obtaining Andesite"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["34C2094185070065"]
+			description: ["Iron nuggets will become a familiar item for you quickly. Keep mining!"]
+			id: "251F84BAEDE4471C"
+			rewards: [{
+				id: "3287460DCDDC3971"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5882E2214FD2E44B"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			title: "Iron Nuggies"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"251F84BAEDE4471C"
+				"309CD61BD1063EC5"
+			]
+			description: ["The Andesite Alloy will be foundational to everything you do from now on. If you can find a way to secure these in large amounts, you'll be set. "]
+			hide_dependency_lines: false
+			id: "71A8F9C14484DBEA"
+			rewards: [{
+				id: "598D9AD460DEBD30"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29EE0443F235168E"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "My First Alloy"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["71A8F9C14484DBEA"]
+			description: ["Congratulations on getting your first shaft! You're going to get many more of these, just like your mom."]
+			id: "53F4DB399D9CCCC9"
+			rewards: [{
+				id: "6A71372A67898C34"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "456EF1E1366F2B41"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "Long and Thin"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["71A8F9C14484DBEA"]
+			description: [
+				"To obtain an andesite casing, right click on a stripped log with an andesite alloy in your hand. To obtain a stripped log? Right click a log with an axe."
+				""
+				"Andesite casings will be your most common machine hull going forward. All it takes is a little bit of imagination, and this bad boy will be working miracles for you in no time. Not actual miracles, of course. For any and all miracle-related inquiries please consult your local Genasi."
+			]
+			id: "187F931002714B68"
+			rewards: [{
+				id: "7DCD38483E3A5539"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60A5B4BA149B380F"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Casing the Joint"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"53F4DB399D9CCCC9"
+				"187F931002714B68"
+			]
+			description: ["Congratulations on making your first machine! The mechanical press is the beginning of your journey into Create. But wait a minute... aren't we forgetting something? Oh shoot, this thing needs power!"]
+			id: "4D3C66432D428015"
+			rewards: [{
+				id: "072CC201138F831D"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "58AD7A58167E97F1"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "The First Step"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4D3C66432D428015"]
+			description: ["The small cogwheel! A wonder of human ingenuity. Right now it's not very useful to us placed in the world, but we'll be learning more about them in a bit."]
+			hide_until_deps_complete: true
+			id: "78DEBA291E5D4429"
+			rewards: [{
+				id: "5FEDFF200059E303"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "491870C2EAB47B09"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "He's just a lil guy"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"53F4DB399D9CCCC9"
+				"4D3C66432D428015"
+			]
+			description: ["Water wheels are going to be our first source of mechanical power, which we'll be measuring in Stress Units (SU). Place one down in the world and pour some water over it. Et voila! Power!"]
+			hide_until_deps_complete: true
+			id: "357DBEA35C3379E2"
+			rewards: [{
+				id: "16DD56DDB8859F6F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "A new method of obtaining power has arrived"
+			tasks: [{
+				id: "1661687A36A01978"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Water Wheels"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4D3C66432D428015"]
+			description: ["Like the small cogwheel, but big!"]
+			hide_until_deps_complete: true
+			id: "70237B94C4118DFE"
+			rewards: [{
+				id: "0C03EA6836465F23"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24FFBB5D36CB0C63"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			title: "Damn boi he thicc!"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["357DBEA35C3379E2"]
+			description: ["The windmill is your second tier of power. The more sails you add, the more SU you gain! "]
+			id: "68CB6A7E9FC5D516"
+			rewards: [{
+				id: "67FF0EA646195687"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "That oughta put wind in your sails!"
+			tasks: [{
+				id: "4F34370B2945BF63"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "The Windmill"
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"68CB6A7E9FC5D516"
+				"4CA120A7B19FF685"
+			]
+			description: ["The lategame power source, steam engines are hard to set up, but will reward you with hundreds of thousands of SU. These will require heated blaze burners to extract all the potential SU."]
+			hide_until_deps_complete: true
+			id: "77CA5101D6C3788C"
+			rewards: [{
+				id: "06E65D79D3CE69C5"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Unlimited Power!"
+			tasks: [{
+				id: "458F4A18588180F9"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Hot and Steamy"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["78DEBA291E5D4429"]
+			description: ["Gearboxes are one of the foundational logistics for your factory. It's incredibly difficult to turn your shafts without them. Confused? Ask your mom about it."]
+			id: "7277E89C01E593A9"
+			rewards: [{
+				id: "74DB5E0F049ED5CD"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A4D3C30F8303093"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "Turning Power"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7277E89C01E593A9"]
+			description: ["Vertical gearboxes, as the name would suggest, are a gearbox that allows you to transfer your rotational force vertically."]
+			id: "0C73C394FD824A67"
+			rewards: [{
+				id: "4FFF8D6114626D08"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4772EBE1C1224AA3"
+				item: "create:vertical_gearbox"
+				type: "item"
+			}]
+			title: "Get Rotated Idiot"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"78DEBA291E5D4429"
+				"70237B94C4118DFE"
+			]
+			description: ["Now that you have power and gears, it's a good time for you to look into gear ratios. By locking your big and small cogwheels together, you can either slow down or speed up your rotations per minute (RPM). But beware! The higher your RPM, the higher the Stress Units (SU) required to support it."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "ftbquests:book"
+			id: "472592043F55099E"
+			subtitle: "W + Ratio"
+			tasks: [{
+				id: "762FC82173405120"
+				type: "checkmark"
+			}]
+			title: "Gear Ratios"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4D3C66432D428015"]
+			description: [
+				"These quests are here to get you started on your wonderful journey into Create. Unfortunately, as I am employed, I do not have time to make this a fully comprehensive guide."
+				""
+				"That's where the ponder mechanic comes in. Lucky for us, Create has a beautiful in-game wiki designed to teach you all of its secrets. Wanna know more about a block? Simply hover over it with your mouse in the JEI and press and hold the 'W' key, and an in-game video player will tell you everything you need to know. Get used to using this!"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "ftbquests:book"
+			id: "75B48B808C2B6526"
+			tasks: [{
+				id: "67B1CC3D1DFCB6ED"
+				type: "checkmark"
+			}]
+			title: "Pondering"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5721CD310F69BA4D"]
+			description: ["Better than the one in your kitchen, this industrial mixer will mash up your inputs into all kinds of useful alloys."]
+			hide_until_deps_complete: true
+			id: "6E18839071B874F2"
+			rewards: [{
+				id: "163F062DECF58905"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43A4D28399A31FBB"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5721CD310F69BA4D"]
+			description: [
+				"The drill breaks the block in front of it! Hope you know how to make a cobblestone generator!"
+				"(Put a chute under the block being broken to avoid entity spam on the ground causing lag)"
+			]
+			hide_until_deps_complete: true
+			id: "6F31C91DA82C42A9"
+			rewards: [{
+				id: "3559115F07DE9D5C"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3259CD72E792398D"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5721CD310F69BA4D"]
+			description: ["The mechanical saw is a useful machine for cutting wood into all kinds of byproducts. Hmmm... Maybe we could cut down trees with these!"]
+			hide_until_deps_complete: true
+			id: "4D5DE9A4AE18CFA3"
+			rewards: [{
+				id: "21933A68879ED156"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "50AD7DEF6B8EAC83"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["The basin is mostly used for compacting and mixing recipes! Place a press or mixer above it to get real use out of it... Or just use it as a crucible - you do you."]
+			hide_until_deps_complete: true
+			id: "0EB1C58A858ED91C"
+			rewards: [{
+				id: "1AFD42E036100BBD"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C5BE13759C49619"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["Depots let you place items safely, where they won't despawn. Their most common use is with the mechanical press, but there are myriad beyond that. Experiment!"]
+			hide_until_deps_complete: true
+			id: "4D1D04CF9F30B849"
+			rewards: [{
+				id: "196406106FFE5578"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63B46CB247CB84BC"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["Belts allow you to transfer items across a distance. Attach each end to a different shaft and watch them spin!"]
+			hide_until_deps_complete: true
+			id: "658E9BFDC2AC0ED1"
+			rewards: [{
+				id: "19C71949C573A7A4"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A18CCF9E2F67B45"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5721CD310F69BA4D"]
+			description: ["The millstone will break down blocks you throw into it, macerating them into various items"]
+			hide_until_deps_complete: true
+			id: "1A7C3DA201A4243F"
+			rewards: [{
+				id: "5B88AAB33D6DCAE6"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1382665BC8E4CC03"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["357DBEA35C3379E2"]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			id: "7D71AAD86113015C"
+			tasks: [{
+				id: "3A98194A869CBE88"
+				title: "The Glorious Evolution"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["Andesite funnels will allow you to insert/extract items out of attached inventories."]
+			hide_until_deps_complete: true
+			id: "4A955234896859A6"
+			rewards: [{
+				id: "12E1033F0ED6BE7F"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A4CE779656F1E2C"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["Andesite tunnels are used to split items on your belts, following some basic logic. Right click them with a wrench to add a glass texture that let's you see inside!"]
+			hide_until_deps_complete: true
+			id: "1D6535379705ADAF"
+			rewards: [{
+				id: "5179A888BFF275E7"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "19965BD831639750"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			description: ["A chute below an inventory will extract 16 items out of it at a time, outputting them below the chute. An inventory below will collect those items. "]
+			hide_until_deps_complete: true
+			id: "12FB2C3F3B659A6E"
+			rewards: [{
+				id: "2CF36B2B9DA267F3"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Wheeeee"
+			tasks: [{
+				id: "67BDBB7FF74C8F25"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			id: "5A15AF384C199A7B"
+			tasks: [{
+				id: "79059CAB759D24D0"
+				title: "Item Logistics"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			id: "5721CD310F69BA4D"
+			tasks: [{
+				id: "52A431503EEE12E8"
+				title: "More Machines"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["357DBEA35C3379E2"]
+			description: ["If you don't like having to grab water every time you wanna make a new water wheel, look no more! Catch a starbuncle instead!"]
+			id: "432F55ADEA56F17F"
+			rewards: [{
+				id: "170FA1E63AAEB6C3"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53051BC1A8C5983F"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			title: "Water wheels - but cute"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			description: ["Stressometers will let you see the SU capacity of your system, as well as how much you're currently using!"]
+			hide_until_deps_complete: true
+			id: "20635E5DFE807395"
+			rewards: [{
+				id: "12FDF73DDEBCFA6B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DF8AD2795607199"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			description: ["The speedometer allows you to see how fast your shafts are turning when you add it to your system."]
+			hide_until_deps_complete: true
+			id: "49941678B16C4C97"
+			rewards: [{
+				id: "11C88E553C2574EB"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			subtitle: "Do you know why I pulled you over?"
+			tasks: [{
+				id: "248EDA73CDBC5830"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			description: ["The wrench is an essential tool for any engineer. Shift right click to pick up your Create blocks, or right click to rotate them! "]
+			hide_until_deps_complete: true
+			id: "24E688E5FBFA5C8E"
+			rewards: [{
+				id: "11C1E61204E3A744"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D2743563F86A6F2"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7D71AAD86113015C"]
+			description: ["Ever wanted more details about your Create machines and gauges? Goggles are for you!"]
+			hide_until_deps_complete: true
+			id: "400CA1CEC8E981FB"
+			rewards: [{
+				id: "1CE83CC9C20512BE"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58BE6E465F285C40"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["5721CD310F69BA4D"]
+			description: ["The encased fan can be used for various things. It can push and pull items depending on the rotation, but if you blow it through lava, fire, soul fire or water, it will process items placed in the airstream differently."]
+			hide_until_deps_complete: true
+			id: "4A7CD627D15E38DE"
+			rewards: [{
+				id: "188C65F416B565BB"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BCD161E3FCFA024"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Encased Fan"
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["28E6BD04447E5641"]
+			hide_until_deps_complete: true
+			icon: "create:mechanical_arm"
+			id: "34C2094185070065"
+			tasks: [{
+				id: "012B28C398C745AE"
+				type: "checkmark"
+			}]
+			title: "Getting Started"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6E18839071B874F2"]
+			description: [
+				"You may notice that some mixing recipes in the JEI are specified as 'Heated.' To heat a mixer basin, you'll need to put a blaze burner underneath it and feed it fuel. "
+				""
+				"Sometimes they'll need even more heat, which is called 'Superheating.' For this you'll need to feed your burner blaze cakes."
+			]
+			id: "4CA120A7B19FF685"
+			rewards: [{
+				id: "0236AF082A4F78D6"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A4A1B6AAFB9CABD"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["357DBEA35C3379E2"]
+			description: ["An alternative to the water wheel, the large water wheel will generate double the SU. However it rotates at half the speed. Hope you got used to your gear ratios!"]
+			hide_until_deps_complete: true
+			id: "2748451849FD8E82"
+			rewards: [{
+				id: "783BDB580440421B"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05F71133B4BF4DDB"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5A15AF384C199A7B"]
+			hide_until_deps_complete: true
+			id: "43BB0744994800E2"
+			tasks: [{
+				id: "5B519717CC901CA5"
+				title: "Fluid Logistics"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["43BB0744994800E2"]
+			description: ["Fluid pipes transport fluids. So complicated!"]
+			hide_until_deps_complete: true
+			id: "2BD0D4C4FD7EAC64"
+			rewards: [{
+				id: "28965F2E909CE337"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BF5D2D24D8D815D"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["43BB0744994800E2"]
+			description: ["The mechanical pump will allow you to push or pull fluids depending on the direction you've set with your wrench. It must be powered with an interlocked cogwheel."]
+			hide_until_deps_complete: true
+			id: "3A56F692CD15FA38"
+			rewards: [{
+				id: "61AA4371C4FB5D68"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28E6DF66F030106C"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["43BB0744994800E2"]
+			description: [
+				"The hose pulley will allow you to pull fluids into your system from natural reserves. Craft a hand crank to lower or raise the hose, and a fluid pump to extract the liquid. "
+				""
+				"Ponder for more info."
+			]
+			hide_until_deps_complete: true
+			id: "5E8483248736B764"
+			rewards: [{
+				id: "474002D09050E408"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C218F6F953145AE"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["43BB0744994800E2"]
+			description: ["Fluid tanks can hold 8,000 mB (8 buckets) of fluid each. By placing them together in a 2x2 or 3x3 pattern they will merge into one."]
+			hide_until_deps_complete: true
+			id: "0D3B81DB2A11B0EA"
+			rewards: [{
+				id: "0CA06C8CC5975190"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0949F3D87272E270"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["43BB0744994800E2"]
+			description: ["The item drain will let us put buckets of fluid into our system. Either drop the bucket on the drain, or simply right click."]
+			hide_until_deps_complete: true
+			id: "5F208C4CD400E4BB"
+			rewards: [{
+				id: "229859F5672FBE76"
+				item: "kubejs:copper_folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D35707F9F50FD66"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -12.0d
+		}
+	]
+	title: "Creating"
+}

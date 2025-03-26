@@ -1,0 +1,136 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "if_youre_seeing_this_something_is_wrong"
+	group: ""
+	id: "136321F15451D4E7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6CE47FC051E00154"
+			tasks: [{
+				icon: "ars_nouveau:fire_essence"
+				id: "00F53AB7E740EE36"
+				type: "custom"
+			}]
+			title: "Fire Unlocked"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "52860CC9FEAD8E24"
+			tasks: [{
+				icon: "ars_nouveau:air_essence"
+				id: "373F44CA186D48D2"
+				type: "custom"
+			}]
+			title: "Air Unlocked"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			id: "05DD7395335B0528"
+			rewards: [{
+				auto: "enabled"
+				id: "3CE42933B0CCB917"
+				item: "kubejs:folk_coin"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "ars_nouveau:water_essence"
+				id: "6D59D1E626950E9F"
+				type: "custom"
+			}]
+			title: "Water Unlocked"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "090BC2B209D2A2B4"
+			tasks: [{
+				icon: "ars_nouveau:earth_essence"
+				id: "106932ED8F5F309D"
+				type: "custom"
+			}]
+			title: "Earth Unlocked"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			description: ["All the choices in the world and you wanted basic bitch. All right, your loss"]
+			icon: "create:mechanical_crafter"
+			id: "66C6147D705AF745"
+			invisible: true
+			subtitle: "It's a fantasy game... Really?"
+			tasks: [{
+				icon: "create:mechanical_crafter"
+				id: "4572985EE9C09F9C"
+				stage: "Human"
+				title: "Human"
+				type: "gamestage"
+			}]
+			title: "Human"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			description: ["You're going to be everyone's favourite tool smith."]
+			icon: "tconstruct:pig_iron_ingot"
+			id: "67E6B07658351C10"
+			invisible: true
+			subtitle: "Mad because small!"
+			tasks: [{
+				icon: "tconstruct:pig_iron_ingot"
+				id: "68CD856BE878F7FA"
+				stage: "Dwarf"
+				title: "Dwarf"
+				type: "gamestage"
+			}]
+			title: "Dwarfism"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			icon: "bloodmagic:weakbloodorb"
+			id: "48E7E3A4FF3EE59E"
+			invisible: true
+			subtitle: "Ahh the rare elusive, grownup emo kid"
+			tasks: [{
+				icon: "bloodmagic:weakbloodorb"
+				id: "2031B9BA095DF434"
+				stage: "Vampire"
+				title: "Vampire"
+				type: "gamestage"
+			}]
+			title: "Vampire"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: ["I cast testicular torsion!"]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "2704A3E1AED88986"
+			invisible: true
+			rewards: [{
+				id: "317C081F356D4DCB"
+				item: "kubejs:folk_coin"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "So you have awakened?"
+			tasks: [{
+				icon: "ars_nouveau:novice_spell_book"
+				id: "76E03697600C76B6"
+				stage: "genasi"
+				title: "Vizard"
+				type: "gamestage"
+			}]
+			title: "Everyones Favorite Magical Girl"
+			x: -3.5d
+			y: 0.5d
+		}
+	]
+	title: "If you're seeing this something is wrong"
+}

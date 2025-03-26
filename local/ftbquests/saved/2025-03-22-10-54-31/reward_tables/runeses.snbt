@@ -1,0 +1,12 @@
+{
+	id: "0B16026A75D70E8F"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 4, item: "bloodmagic:speedrune" }
+		{ count: 4, item: "bloodmagic:selfsacrificerune" }
+		{ count: 4, item: "bloodmagic:sacrificerune" }
+		{ count: 8, item: "bloodmagic:blankrune" }
+	]
+	title: "Runeses"
+}

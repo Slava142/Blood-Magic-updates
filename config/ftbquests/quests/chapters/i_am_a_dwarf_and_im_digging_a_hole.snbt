@@ -1,0 +1,594 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "i_am_a_dwarf_and_im_digging_a_hole"
+	group: "6924482853C613F8"
+	icon: {
+		Count: 1
+		id: "tconstruct:pickadze"
+		tag: {
+			Damage: 0
+			tic_broken: 0b
+			tic_materials: [
+				"tconstruct:scorched_stone"
+				"tconstruct:scorched_stone"
+				"tconstruct:scorched_stone"
+			]
+			tic_modifiers: [
+				{
+					level: 3
+					name: "tconstruct:scorching"
+				}
+				{
+					level: 1
+					name: "tconstruct:pathing"
+				}
+			]
+			tic_multipliers: {
+				"tconstruct:attack_damage": 1.15f
+				"tconstruct:durability": 1.3f
+				"tconstruct:mining_speed": 0.75f
+			}
+			tic_persistent: { }
+			tic_stats: {
+				"tconstruct:attack_damage": 3.795f
+				"tconstruct:attack_speed": 1.3649999f
+				"tconstruct:durability": 124.799995f
+				"tconstruct:harvest_tier": "minecraft:iron"
+				"tconstruct:mining_speed": 3.375f
+			}
+			tic_volatile_data: {
+				abilities: 1
+				upgrades: 3
+			}
+		}
+	}
+	id: "251AFE0AC96170E7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2025AED47C3B5EBD"]
+			description: [
+				"Patterns are the beginning of your journey into Tinker's Construct! Use them to make your first"
+				"book to learn more."
+			]
+			id: "2D8FA3AF18FCF072"
+			tasks: [{
+				count: 3L
+				id: "39E52330E440E701"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			title: "Before we begin"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D60A9DB0EF68E5C"]
+			description: [
+				"We've obtained information about materials. Now let's look at how to use them. "
+				""
+				"Tinker's Construct adds a whole suite of new stations for all your toolmaking needs. Connected stations will also share a GUI. Neat!"
+				""
+				"This one's just a glorified crafting table."
+			]
+			id: "45FDE7C44B7CA2D2"
+			subtitle: "It has keepInventory true"
+			tasks: [{
+				id: "3640646F17F4ECCE"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			title: "Introducing the Tinker's Suite"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["45FDE7C44B7CA2D2"]
+			description: ["The part builder will allow you to construct unique parts out of basic materials. "]
+			id: "6A3F6D8BF6B66696"
+			tasks: [{
+				id: "647D7629DFE73AE4"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["187E78377CDDC171"]
+			id: "226E7627515DC5E0"
+			subtitle: "Holds completed tool parts"
+			tasks: [{
+				id: "5A6AD990E074FD7D"
+				item: "tconstruct:part_chest"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"226E7627515DC5E0"
+				"51B4113A1A9F9216"
+				"4FB264DF6C275EE8"
+			]
+			description: ["The Tinker's Anvil combines many of the stations into one, and gives you access to brand new tools and repairing. It will require an alloyed metal to make, so we recommend brass."]
+			id: "2C8319FEC13FBFC7"
+			subtitle: "All For One"
+			tasks: [{
+				id: "100A4BDE022699E6"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "create:brass_block"
+					}
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Better tool time"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2D8FA3AF18FCF072"]
+			description: ["Materials and You will teach you what effects you can get from basic materials found in the world. Don't get too caught up reading it now; you can come back to it later once we start making a tool."]
+			id: "0D60A9DB0EF68E5C"
+			tasks: [{
+				id: "28C69B6E5400309D"
+				item: "tconstruct:materials_and_you"
+				type: "item"
+			}]
+			title: "Tinkering 101"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D1DAACD6E356533"]
+			description: ["The tinker station will allow you to make basic tools! Try making another set of rock parts like we showed before, and make your first pickadze."]
+			id: "00C0E06B9143756E"
+			subtitle: "Tool assembly basics"
+			tasks: [{
+				id: "320E9A652C3F6C71"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"2C8319FEC13FBFC7"
+				"7BFA6B909287C350"
+			]
+			id: "19204077346A69DD"
+			subtitle: "Normal chest that connects to tinkers tables"
+			tasks: [{
+				id: "50403378EA1B151D"
+				item: "tconstruct:tinkers_chest"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1C2E8778CA80C1C5"]
+			description: ["By the beard of Moradin, may the Lord bless you. May his hammer fall and keep all that your spirits have tossed out from your body inside."]
+			id: "0881F114E1BAE313"
+			subtitle: "That's Dwarven Culture"
+			tasks: [{
+				id: "0A6C840A070A5936"
+				title: "Explore!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["32AD6A21BDF6CE1D"]
+			description: ["Crafting this codex will reveal a whole new world to you."]
+			hide_until_deps_complete: true
+			id: "440F0F2D4DA9AE77"
+			subtitle: "I'm really, really tired of making quests... And this quest book is really good anyways."
+			tasks: [{
+				id: "5F168D570534BAE5"
+				item: "embers:ancient_codex"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2025AED47C3B5EBD"]
+			description: [
+				"After entering the nether, you've found brand new metals to work with. But something is strange. "
+				""
+				"These metals are resonating with you more powerfully than the others. Could there be something special about them?"
+			]
+			hide_until_deps_complete: true
+			id: "32AD6A21BDF6CE1D"
+			tasks: [
+				{
+					id: "4637D987C16718C8"
+					item: "embers:raw_silver"
+					type: "item"
+				}
+				{
+					id: "6EA27F8F3AC9C3DD"
+					item: "embers:raw_lead"
+					type: "item"
+				}
+			]
+			title: "Crucible of Fire"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"14A3A6F328C8F5FA"
+				"67E6B07658351C10"
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:pig_iron_ingot"
+			id: "2025AED47C3B5EBD"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "43017333BFD7BCD3"
+				type: "dimension"
+			}]
+			title: "Dwarfism"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62AEF0051CADC422"
+				"0C6CC6EA6322D813"
+				"5FBDD613567F74AA"
+			]
+			description: [
+				"Congrats on making your first complex tool."
+				""
+				"For the sake of the quests, we made a tool out of only copper, but remember that all your parts can be made from different materials! "
+				""
+				"In the future you should pick your materials wisely and make a tool that suits your needs! "
+			]
+			id: "1C2E8778CA80C1C5"
+			tasks: [{
+				id: "6B68A9704A9D804F"
+				item: {
+					Count: 1
+					id: "tconstruct:vein_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:copper"
+							"tconstruct:copper"
+							"tconstruct:copper"
+							"tconstruct:copper"
+						]
+						tic_modifiers: [
+							{
+								level: 2
+								name: "tconstruct:pierce"
+							}
+							{
+								level: 4
+								name: "tconstruct:dwarven"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.25f
+							"tconstruct:durability": 5.0f
+							"tconstruct:mining_speed": 0.3f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 5.90625f
+							"tconstruct:attack_speed": 0.85f
+							"tconstruct:durability": 840.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 1.6500001f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["6AF8D25ABFBECCC8"]
+			id: "0C6CC6EA6322D813"
+			tasks: [{
+				id: "3D96E574C1B78E3A"
+				item: {
+					Count: 1
+					id: "tconstruct:large_plate"
+					tag: {
+						Material: "tconstruct:copper"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6AF8D25ABFBECCC8"]
+			id: "62AEF0051CADC422"
+			tasks: [{
+				id: "2F58F37BC7C14405"
+				item: {
+					Count: 1
+					id: "tconstruct:hammer_head"
+					tag: {
+						Material: "tconstruct:copper"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["2C8319FEC13FBFC7"]
+			description: ["Now that we have our tinker's suite set up, let's try doing it again with a new tool and metal parts."]
+			id: "6AF8D25ABFBECCC8"
+			tasks: [{
+				id: "16228FDB4DD96145"
+				item: {
+					Count: 1
+					id: "tconstruct:tough_handle"
+					tag: {
+						Material: "tconstruct:copper"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0D60A9DB0EF68E5C"]
+			hide_until_deps_complete: true
+			id: "3E14040F64AD6B29"
+			tasks: [{
+				id: "2C5768267E8D4BA5"
+				item: "tconstruct:puny_smelting"
+				type: "item"
+			}]
+			title: "Tier 2 Materials"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E14040F64AD6B29"]
+			hide_until_deps_complete: true
+			id: "4D4A997957122750"
+			tasks: [{
+				id: "390F1251D0A0905B"
+				item: "tconstruct:mighty_smelting"
+				type: "item"
+			}]
+			title: "Tier 3 Materials"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4D4A997957122750"]
+			hide_until_deps_complete: true
+			id: "1F0B947DD4CCF619"
+			tasks: [{
+				id: "298DC6B47D461BF1"
+				item: "tconstruct:fantastic_foundry"
+				type: "item"
+			}]
+			title: "Tier 4 Materials"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F0B947DD4CCF619"]
+			hide_until_deps_complete: true
+			id: "1F620C8A2198C7D2"
+			tasks: [{
+				id: "6F17C068786140CB"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			title: "All the Knowledge"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"187E78377CDDC171"
+				"6F88D1DA385332EF"
+			]
+			description: ["Place your tool handle on a casting table, and pour gold over it. This will destroy the handle, but now you can make handles out of better materials directly from your smeltery!"]
+			id: "45AAA8241DAC4354"
+			tasks: [{
+				id: "3B9E75B44FF47F25"
+				item: "tconstruct:tool_handle_cast"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6A3F6D8BF6B66696"]
+			description: ["Try making a rock tool handle in your part builder."]
+			id: "187E78377CDDC171"
+			tasks: [{
+				id: "11B0F5E34A9B228C"
+				item: {
+					Count: 1
+					id: "tconstruct:tool_handle"
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6A3F6D8BF6B66696"]
+			description: ["Try making a rock pickaxe head in your part builder."]
+			id: "1436E06A2F8EFA80"
+			tasks: [{
+				id: "7EED5455609AD52B"
+				item: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1436E06A2F8EFA80"]
+			description: ["Place your pickaxe head on a casting table, and pour gold over it. This will destroy the head, but now you can make heads out of better materials directly from your smeltery!"]
+			id: "7BFA6B909287C350"
+			tasks: [{
+				id: "33D397F7968D3DC3"
+				item: "tconstruct:pick_head_cast"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1436E06A2F8EFA80"]
+			description: ["The modifier worktable allows you to toggle interactions on/off, as well as extract upgrades and modifiers. Right click on it in the JEI for more information."]
+			id: "51B4113A1A9F9216"
+			tasks: [{
+				id: "28A11E0BE1A7A2A8"
+				item: "tconstruct:modifier_worktable"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6A3F6D8BF6B66696"]
+			description: ["If you don't know what to do, try going left and right first."]
+			id: "3D1DAACD6E356533"
+			tasks: [
+				{
+					id: "0847C075DB5A2DDE"
+					item: {
+						Count: 1
+						id: "tconstruct:adze_head"
+						tag: {
+							Material: "tconstruct:rock"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "076E9F30A5FE294C"
+					item: "tconstruct:adze_head_cast"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2C8319FEC13FBFC7"]
+			id: "6F88D1DA385332EF"
+			subtitle: "All your casts in one block"
+			tasks: [{
+				id: "06798F6DCF274CD9"
+				item: "tconstruct:cast_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6AF8D25ABFBECCC8"]
+			id: "5FBDD613567F74AA"
+			tasks: [{
+				id: "3883A389A01909C0"
+				item: {
+					Count: 1
+					id: "tconstruct:tough_binding"
+					tag: {
+						Material: "tconstruct:copper"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["00C0E06B9143756E"]
+			id: "4FB264DF6C275EE8"
+			tasks: [{
+				id: "7BF63A7332DF1D01"
+				item: {
+					Count: 1
+					id: "tconstruct:pickadze"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:rock"
+							"tconstruct:rock"
+							"tconstruct:rock"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:stonebound"
+							}
+							{
+								level: 1
+								name: "tconstruct:pathing"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.15f
+							"tconstruct:durability": 1.3f
+							"tconstruct:mining_speed": 0.75f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 1.7249999f
+							"tconstruct:attack_speed": 1.3f
+							"tconstruct:durability": 152.09999f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:mining_speed": 3.1499999f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+	]
+	title: "Diggy Diggy Hole"
+}
